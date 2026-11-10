@@ -1,7 +1,7 @@
 {
  "meta": {
   "game": "PokeNexus (Godot beta, client 1.0.52)",
-  "source": "Read from in-game Trainer Tree tooltips at beta.poke-nexus.com",
+  "source": "PPO Godot beta",
   "captured": "2026-11-10",
   "notes": [
    "pathCost = cheapest total points from the start node, matches the in-game \"Path: N points\" readout",
