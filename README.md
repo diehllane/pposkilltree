@@ -34,7 +34,3 @@ There are 22 keystones (all need trainer level 30) and 11 trainer skills. Shiny 
 - **Keystone rules.** Nothing in the tooltips says whether keystones exclude each other. The planner doesn't restrict them.
 - **Hidden path costs.** Gated nodes hide their path cost in game, so those values are computed from the graph.
 - **Beta data.** Values were read on 2026-11-10 and will change between beta patches.
-
-## How it was captured
-
-The node data was read off the in-game tooltips in the web beta, with no access to the game's files. The connections were detected from the lines the game draws between nodes and then validated against the in-game path costs. The client's data bundle is encrypted, so it wasn't used.
