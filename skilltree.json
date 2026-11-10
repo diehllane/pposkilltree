@@ -1,0 +1,4259 @@
+{
+ "meta": {
+  "game": "PokeNexus (Godot beta, client 1.0.52)",
+  "source": "Read from in-game Trainer Tree tooltips at beta.poke-nexus.com",
+  "captured": "2026-11-10",
+  "notes": [
+   "pathCost = cheapest total points from the start node, matches the in-game \"Path: N points\" readout",
+   "levelReq is the trainer level shown on gated nodes; keystones need 30, Shiny Bond needs 50",
+   "x/y are layout coordinates relative to the start node (screen units at default zoom, y down)",
+   "edges are undirected; 13 short cross-links (\"rungs\") join neighbouring lanes inside a branch"
+  ]
+ },
+ "root": {
+  "id": "root",
+  "name": "Start",
+  "x": 0,
+  "y": 0
+ },
+ "nodes": [
+  {
+   "name": "Fishing License",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% fishing exp",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": 48.0,
+   "y": -16.7,
+   "id": "angler-01"
+  },
+  {
+   "name": "Fishing Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% fishing exp",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 59.3,
+   "y": -28.2,
+   "id": "angler-02"
+  },
+  {
+   "name": "Bite Wait",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "-3% bite wait (every rod but the AFK Rod)",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 62.0,
+   "y": -21.5,
+   "id": "angler-03"
+  },
+  {
+   "name": "Fishing Encounter Rates",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% encounter rates while fishing",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 63.9,
+   "y": -14.6,
+   "id": "angler-04"
+  },
+  {
+   "name": "Fished Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% Pokemon exp from Pokemon you fish up",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 65.2,
+   "y": -7.4,
+   "id": "angler-05"
+  },
+  {
+   "name": "Feeding Frenzy",
+   "branch": "Angler",
+   "type": "skill",
+   "cost": 2,
+   "effect": "+15% fishing exp and -30% bite wait (every rod but the AFK Rod) for 10 minutes. Cooldown 45 min.",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 60.7,
+   "y": -37.5,
+   "id": "angler-06"
+  },
+  {
+   "name": "Fishing Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% fishing exp",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 73.1,
+   "y": -34.8,
+   "id": "angler-07"
+  },
+  {
+   "name": "Bite Wait",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "-3% bite wait (every rod but the AFK Rod)",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 76.4,
+   "y": -26.1,
+   "id": "angler-08"
+  },
+  {
+   "name": "Fishing Encounter Rates",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% encounter rates while fishing",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 78.9,
+   "y": -17.0,
+   "id": "angler-09"
+  },
+  {
+   "name": "Fished Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% Pokemon exp from Pokemon you fish up",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 79.8,
+   "y": -8.0,
+   "id": "angler-10"
+  },
+  {
+   "name": "Chum",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "-33% Feeding Frenzy cooldown",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 73.1,
+   "y": -45.9,
+   "id": "angler-11"
+  },
+  {
+   "name": "Fishing Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% fishing exp",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 86.2,
+   "y": -41.5,
+   "id": "angler-12"
+  },
+  {
+   "name": "Bite Wait",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "-3% bite wait (every rod but the AFK Rod)",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 91.1,
+   "y": -30.8,
+   "id": "angler-13"
+  },
+  {
+   "name": "Deep Water",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+4% encounter rates while fishing; +3% drop chance on Pokemon you fish up",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 93.8,
+   "y": -19.7,
+   "id": "angler-14"
+  },
+  {
+   "name": "Fished Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% Pokemon exp from Pokemon you fish up",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 95.1,
+   "y": -8.2,
+   "id": "angler-15"
+  },
+  {
+   "name": "Fishing Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% fishing exp",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 100.3,
+   "y": -48.2,
+   "id": "angler-16"
+  },
+  {
+   "name": "Quick Reflexes",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "-6% bite wait (every rod but the AFK Rod)",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 104.9,
+   "y": -35.7,
+   "id": "angler-17"
+  },
+  {
+   "name": "Fished Drops",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% drop chance on Pokemon you fish up",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 108.9,
+   "y": -22.6,
+   "id": "angler-18"
+  },
+  {
+   "name": "Line Trainer",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+4% Pokemon exp from Pokemon you fish up",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 110.2,
+   "y": -8.9,
+   "id": "angler-19"
+  },
+  {
+   "name": "Fishing Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% fishing exp",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 114.1,
+   "y": -54.1,
+   "id": "angler-20"
+  },
+  {
+   "name": "Fished Drops",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% drop chance on Pokemon you fish up",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 123.3,
+   "y": -25.6,
+   "id": "angler-21"
+  },
+  {
+   "name": "Fishing Exp",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% fishing exp",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": 127.2,
+   "y": -60.7,
+   "id": "angler-22"
+  },
+  {
+   "name": "Trawler",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% drop chance on Pokemon you fish up",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": 137.7,
+   "y": -28.2,
+   "id": "angler-23"
+  },
+  {
+   "name": "Seasoned Angler",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+6% fishing exp",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": 141.0,
+   "y": -67.2,
+   "id": "angler-24"
+  },
+  {
+   "name": "Master Angler",
+   "branch": "Angler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% fishing exp; -5% bite wait (every rod but the AFK Rod)",
+   "levelReq": null,
+   "pathCost": 9,
+   "x": 154.8,
+   "y": -73.1,
+   "id": "angler-25"
+  },
+  {
+   "name": "Patient Angler",
+   "branch": "Angler",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "-20% bite wait on the AFK Rod. +15% bite wait on every other rod.",
+   "levelReq": 30,
+   "pathCost": 12,
+   "x": 174.4,
+   "y": -82.0,
+   "id": "angler-26"
+  },
+  {
+   "name": "Competitor",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "2% chance for double Tower Tokens; 2% chance for double PvP Tokens from matches",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": -47.7,
+   "y": -16.5,
+   "id": "battler-01"
+  },
+  {
+   "name": "Double Tower Tokens",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double Tower Tokens",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -64.9,
+   "y": -7.2,
+   "id": "battler-02"
+  },
+  {
+   "name": "Double PvP Tokens",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double PvP Tokens from matches",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -62.0,
+   "y": -21.6,
+   "id": "battler-03"
+  },
+  {
+   "name": "World Boss Money",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5% world boss money",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -56.2,
+   "y": -34.2,
+   "id": "battler-04"
+  },
+  {
+   "name": "Double Tower Tokens",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double Tower Tokens",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -79.8,
+   "y": -7.9,
+   "id": "battler-05"
+  },
+  {
+   "name": "Double PvP Tokens",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double PvP Tokens from matches",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -76.1,
+   "y": -25.7,
+   "id": "battler-06"
+  },
+  {
+   "name": "World Boss Money",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5% world boss money",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -68.9,
+   "y": -42.6,
+   "id": "battler-07"
+  },
+  {
+   "name": "Double Tower Tokens",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double Tower Tokens",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -94.9,
+   "y": -7.9,
+   "id": "battler-08"
+  },
+  {
+   "name": "Double PvP Tokens",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double PvP Tokens from matches",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -90.5,
+   "y": -30.5,
+   "id": "battler-09"
+  },
+  {
+   "name": "Raider",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "+10% world boss money; 10% chance of an extra world boss loot roll",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -80.7,
+   "y": -51.1,
+   "id": "battler-10"
+  },
+  {
+   "name": "Double PvP Tokens",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double PvP Tokens from matches",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -104.9,
+   "y": -35.2,
+   "id": "battler-11"
+  },
+  {
+   "name": "Tower Climber",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 2,
+   "effect": "4% chance for double Tower Tokens",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -110.0,
+   "y": -8.5,
+   "id": "battler-12"
+  },
+  {
+   "name": "Arena Ace",
+   "branch": "Battler",
+   "type": "node",
+   "cost": 1,
+   "effect": "6% chance for double PvP Tokens from matches",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -119.3,
+   "y": -40.0,
+   "id": "battler-13"
+  },
+  {
+   "name": "Iron Will",
+   "branch": "Battler",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "+30% chance for double Tower Tokens. Losing a run started with Iron Will sends you back to floor 0 instead of floor 100.",
+   "levelReq": 30,
+   "pathCost": 9,
+   "x": -132.8,
+   "y": -9.8,
+   "id": "battler-14"
+  },
+  {
+   "name": "Underdogs",
+   "branch": "Battler",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "+20% chance for double Tower Tokens on floors you clear with no legendary or mythical Pokemon in your team. Ultra Beasts are fine.",
+   "levelReq": 30,
+   "pathCost": 9,
+   "x": -129.5,
+   "y": -31.8,
+   "id": "battler-15"
+  },
+  {
+   "name": "Duelist",
+   "branch": "Battler",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "+50% chance for double PvP Tokens from wins. Losses pay no PvP Tokens.",
+   "levelReq": 30,
+   "pathCost": 9,
+   "x": -139.1,
+   "y": -45.2,
+   "id": "battler-16"
+  },
+  {
+   "name": "Caretaker",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance to keep an IV Powder or Everstone when breeding",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": -29.4,
+   "y": 39.2,
+   "id": "breeder-01"
+  },
+  {
+   "name": "Keep Breeding Items",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance to keep an IV Powder or Everstone when breeding",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -25.9,
+   "y": 58.3,
+   "id": "breeder-02"
+  },
+  {
+   "name": "Picnic",
+   "branch": "Breeder",
+   "type": "skill",
+   "cost": 1,
+   "effect": "Heals your party and gives +20% drop chance for 10 minutes. Cooldown 1 h.",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -48.7,
+   "y": 41.9,
+   "id": "breeder-03"
+  },
+  {
+   "name": "Keep Breeding Items",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance to keep an IV Powder or Everstone when breeding",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -30.7,
+   "y": 72.6,
+   "id": "breeder-04"
+  },
+  {
+   "name": "Picnic Cooldown",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "-10% Picnic cooldown",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -60.8,
+   "y": 51.1,
+   "id": "breeder-05"
+  },
+  {
+   "name": "First Aid",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "-25% Picnic cooldown",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -72.8,
+   "y": 59.7,
+   "id": "breeder-06"
+  },
+  {
+   "name": "Pedigree",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 2,
+   "effect": "10% chance per bred IV to roll twice and keep the higher",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -35.5,
+   "y": 86.6,
+   "id": "breeder-07"
+  },
+  {
+   "name": "Picnic Party",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "When you use Picnic, party members on your map who fought a wild Pokemon in the last 2 minutes get it too (the heal only if they aren't in a battle). It starts their own Picnic cooldown and skips anyone whose cooldown is running.",
+   "levelReq": 30,
+   "pathCost": 5,
+   "x": -83.9,
+   "y": 68.9,
+   "id": "breeder-08"
+  },
+  {
+   "name": "Keep Breeding Items",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance to keep an IV Powder or Everstone when breeding",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -41.3,
+   "y": 100.5,
+   "id": "breeder-09"
+  },
+  {
+   "name": "Keep Breeding Items",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance to keep an IV Powder or Everstone when breeding",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": -46.8,
+   "y": 114.8,
+   "id": "breeder-10"
+  },
+  {
+   "name": "Heirloom",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 2,
+   "effect": "5% chance to keep an IV Powder or Everstone when breeding; 5% chance per bred IV to roll twice and keep the higher",
+   "levelReq": null,
+   "pathCost": 9,
+   "x": -52.5,
+   "y": 128.5,
+   "id": "breeder-11"
+  },
+  {
+   "name": "Pedigree",
+   "branch": "Breeder",
+   "type": "node",
+   "cost": 1,
+   "effect": "5% chance per bred IV to roll twice and keep the higher",
+   "levelReq": null,
+   "pathCost": 10,
+   "x": -58.4,
+   "y": 142.3,
+   "id": "breeder-12"
+  },
+  {
+   "name": "Ball Handler",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5% catch rate",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": 29.8,
+   "y": -41.6,
+   "id": "collector-01"
+  },
+  {
+   "name": "Quick Exit",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Running from a wild Pokemon always works, unless you're trapped or on a map where you can't run.",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 28.5,
+   "y": -65.7,
+   "id": "collector-02"
+  },
+  {
+   "name": "Habitat Drops",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% drop chance on maps where you've caught every Pokemon that spawns there; +3% money from wild battles on maps where you've caught every Pokemon that spawns there",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 32.5,
+   "y": -57.9,
+   "id": "collector-03"
+  },
+  {
+   "name": "Steady Hand",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+25% catch rate on Extremely Rare, elite and legendary Pokemon",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 41.6,
+   "y": -58.5,
+   "id": "collector-04"
+  },
+  {
+   "name": "Synchronize",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 44.1,
+   "y": -49.3,
+   "id": "collector-05"
+  },
+  {
+   "name": "Hidden Ability",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 1% to the hidden ability chance of wild Pokemon (30% base)",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 48.9,
+   "y": -44.3,
+   "id": "collector-06"
+  },
+  {
+   "name": "IV Floor",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1 to the lowest IV a Pokemon you catch can have",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 33.1,
+   "y": -80.2,
+   "id": "collector-07"
+  },
+  {
+   "name": "Habitat Drops",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% drop chance on maps where you've caught every Pokemon that spawns there; +3% money from wild battles on maps where you've caught every Pokemon that spawns there",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 39.2,
+   "y": -71.0,
+   "id": "collector-08"
+  },
+  {
+   "name": "Synchronize",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 54.8,
+   "y": -60.2,
+   "id": "collector-09"
+  },
+  {
+   "name": "Hidden Ability",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 1% to the hidden ability chance of wild Pokemon (30% base)",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 61.3,
+   "y": -53.6,
+   "id": "collector-10"
+  },
+  {
+   "name": "Good Stock",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1 to the lowest IV a Pokemon you catch can have",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 37.7,
+   "y": -94.3,
+   "id": "collector-11"
+  },
+  {
+   "name": "Habitat Drops",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% drop chance on maps where you've caught every Pokemon that spawns there; +3% money from wild battles on maps where you've caught every Pokemon that spawns there",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 46.4,
+   "y": -84.6,
+   "id": "collector-12"
+  },
+  {
+   "name": "Catch Combo",
+   "branch": "Collector",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "Each catch of the same species adds 1 to a combo, and knocking one out or running from one takes 1 off. +10% shiny chance on that species for every 5 in the combo, up to 2x at 50. Catching a different species starts a new combo.",
+   "levelReq": 30,
+   "pathCost": 4,
+   "x": 53.4,
+   "y": -78.0,
+   "id": "collector-13"
+  },
+  {
+   "name": "Synchronize",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 64.9,
+   "y": -70.8,
+   "id": "collector-14"
+  },
+  {
+   "name": "Hidden Ability",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 1% to the hidden ability chance of wild Pokemon (30% base)",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 73.1,
+   "y": -62.5,
+   "id": "collector-15"
+  },
+  {
+   "name": "Habitat Drops",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% drop chance on maps where you've caught every Pokemon that spawns there; +3% money from wild battles on maps where you've caught every Pokemon that spawns there",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 53.4,
+   "y": -97.4,
+   "id": "collector-16"
+  },
+  {
+   "name": "Synchronize",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 75.2,
+   "y": -82.0,
+   "id": "collector-17"
+  },
+  {
+   "name": "Hidden Ability",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 1% to the hidden ability chance of wild Pokemon (30% base)",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 84.6,
+   "y": -72.0,
+   "id": "collector-18"
+  },
+  {
+   "name": "Collector's Creed",
+   "branch": "Collector",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "+150 trainer exp per catch. -20% Pokemon exp and money from wild battles.",
+   "levelReq": 30,
+   "pathCost": 6,
+   "x": 45.9,
+   "y": -116.1,
+   "id": "collector-19"
+  },
+  {
+   "name": "First Catch",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Trainer exp the first time you catch each species in the wild: 250 for a Common, 500 for an Uncommon, 1,000 for a Rare, 2,000 for a Very Rare, 3,000 for an Extremely Rare or legendary.",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 60.7,
+   "y": -110.5,
+   "id": "collector-20"
+  },
+  {
+   "name": "Nature Sense",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 85.6,
+   "y": -92.6,
+   "id": "collector-21"
+  },
+  {
+   "name": "Hidden Potential",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 1% to the hidden ability chance of wild Pokemon (30% base)",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 96.4,
+   "y": -81.6,
+   "id": "collector-22"
+  },
+  {
+   "name": "Field Notes",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 2,
+   "effect": "When a Rare, Very Rare or Extremely Rare Pokemon appears, you get one you haven't caught yet if that rarity on the map has one.",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": 67.9,
+   "y": -123.6,
+   "id": "collector-23"
+  },
+  {
+   "name": "Region Mastery",
+   "branch": "Collector",
+   "type": "node",
+   "cost": 2,
+   "effect": "+5% encounter rates in a region once you've caught every Pokemon that spawns there, Commons to Extremely Rares. Legendary encounters don't count, and neither do boss floors, Deep maps, the Faraway Islands, Ancient Dungeon or Altering Cave (no bonus there either). [shows per-region dex progress]",
+   "levelReq": null,
+   "pathCost": 10,
+   "x": 75.7,
+   "y": -137.0,
+   "id": "collector-24"
+  },
+  {
+   "name": "Encore",
+   "branch": "Collector",
+   "type": "skill",
+   "cost": 2,
+   "effect": "For 30 minutes, the species you last battled replaces the other Pokemon of its rarity wherever it spawns. Rare, Very Rare and Extremely Rare Pokemon only, not legendary ones. Cooldown 4 h.",
+   "levelReq": null,
+   "pathCost": 12,
+   "x": 82.3,
+   "y": -150.2,
+   "id": "collector-25"
+  },
+  {
+   "name": "Traveler",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-10% ferry fares",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": 0.2,
+   "y": 48.7,
+   "id": "explorer-01"
+  },
+  {
+   "name": "Safari Encounter Rates",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% encounter rates in Safari Zones",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 14.6,
+   "y": 62.1,
+   "id": "explorer-02"
+  },
+  {
+   "name": "Ferry Fares",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-10% ferry fares",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 0.2,
+   "y": 63.4,
+   "id": "explorer-03"
+  },
+  {
+   "name": "Regroup",
+   "branch": "Explorer",
+   "type": "skill",
+   "cost": 1,
+   "effect": "Teleport to a party member. You need to have been there or have as many badges as they do, plus any ticket or key item the way in asks for. You can't reach someone who is surfing without Surf, and Regroup never goes into Elite Four rooms. Cooldown 30 min.",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -14.2,
+   "y": 62.2,
+   "id": "explorer-04"
+  },
+  {
+   "name": "Safari Regular",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% encounter rates in Safari Zones",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 18.5,
+   "y": 76.6,
+   "id": "explorer-05"
+  },
+  {
+   "name": "Sea Legs",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-30% ferry fares",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 0.2,
+   "y": 78.5,
+   "id": "explorer-06"
+  },
+  {
+   "name": "Good Company",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-50% Regroup cooldown",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -18.3,
+   "y": 76.6,
+   "id": "explorer-07"
+  },
+  {
+   "name": "Dig",
+   "branch": "Explorer",
+   "type": "skill",
+   "cost": 1,
+   "effect": "Travel to a cave you've been in. Cooldown 1 h.",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 23.1,
+   "y": 91.0,
+   "id": "explorer-08"
+  },
+  {
+   "name": "Fly",
+   "branch": "Explorer",
+   "type": "skill",
+   "cost": 1,
+   "effect": "Fly to a Pokecenter you've visited. Cooldown 30 min.",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 0.2,
+   "y": 93.6,
+   "id": "explorer-09"
+  },
+  {
+   "name": "Dig Cooldown",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-25% Dig cooldown",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 26.9,
+   "y": 105.6,
+   "id": "explorer-10"
+  },
+  {
+   "name": "Fly Cooldown",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-10% Fly cooldown",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 0.0,
+   "y": 108.5,
+   "id": "explorer-11"
+  },
+  {
+   "name": "Pack Leader",
+   "branch": "Explorer",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "+4% money from wild battles and drop chance for each party member on your map who fought a wild Pokemon in the last 2 minutes, up to +16%. 2x Party EXP for party members on your map (2% -> 4% per member) while you're fighting wild Pokemon there too. -10% money from wild battles while nobody else is in your party.",
+   "levelReq": 30,
+   "pathCost": 5,
+   "x": -24.3,
+   "y": 96.9,
+   "id": "explorer-12"
+  },
+  {
+   "name": "Burrow",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-25% Dig cooldown",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 30.2,
+   "y": 120.0,
+   "id": "explorer-13"
+  },
+  {
+   "name": "Safari Ranger",
+   "branch": "Explorer",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "In Safari Zones: +12% encounter rates. Everywhere else: -5% encounter rates.",
+   "levelReq": 30,
+   "pathCost": 6,
+   "x": 13.8,
+   "y": 101.6,
+   "id": "explorer-14"
+  },
+  {
+   "name": "Tailwind",
+   "branch": "Explorer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-25% Fly cooldown",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 0.0,
+   "y": 123.9,
+   "id": "explorer-15"
+  },
+  {
+   "name": "Cave Dweller",
+   "branch": "Explorer",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "On the cave maps Dig reaches (except the Stark Mountain Chamber): +5% encounter rates and +6% drop chance. Everywhere else: -5% encounter rates.",
+   "levelReq": 30,
+   "pathCost": 9,
+   "x": 38.0,
+   "y": 143.0,
+   "id": "explorer-16"
+  },
+  {
+   "name": "Nomad",
+   "branch": "Explorer",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "-40% Fly, Dig and Regroup cooldowns. +10% Pokemart prices, service prices and ferry fares.",
+   "levelReq": 30,
+   "pathCost": 9,
+   "x": 21.6,
+   "y": 142.3,
+   "id": "explorer-17"
+  },
+  {
+   "name": "Night Owl",
+   "branch": "Explorer",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "At night: +15% encounter rates and +10% shiny chance. Any other time: -2% encounter rates.",
+   "levelReq": 30,
+   "pathCost": 9,
+   "x": 0,
+   "y": 145,
+   "id": "explorer-18"
+  },
+  {
+   "name": "Coin Purse",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": 29.7,
+   "y": 39.2,
+   "id": "fortune-01"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 48.7,
+   "y": 41.6,
+   "id": "fortune-02"
+  },
+  {
+   "name": "Pay Day",
+   "branch": "Fortune",
+   "type": "skill",
+   "cost": 1,
+   "effect": "+25% money from wild battles for 15 minutes. Cooldown 3 h.",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 42.1,
+   "y": 48.4,
+   "id": "fortune-03"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 34.6,
+   "y": 54.1,
+   "id": "fortune-04"
+  },
+  {
+   "name": "Pokemart Prices",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "-3% Pokemart prices",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 26.1,
+   "y": 58.2,
+   "id": "fortune-05"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 60.7,
+   "y": 51.0,
+   "id": "fortune-06"
+  },
+  {
+   "name": "Big Spender",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "-33% Pay Day cooldown",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 52.1,
+   "y": 59.5,
+   "id": "fortune-07"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 42.1,
+   "y": 66.7,
+   "id": "fortune-08"
+  },
+  {
+   "name": "Haggler",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "-7% Pokemart prices; -10% gender change and storage box prices",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 31.0,
+   "y": 72.6,
+   "id": "fortune-09"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 73.1,
+   "y": 59.5,
+   "id": "fortune-10"
+  },
+  {
+   "name": "Bonus Round",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5 minutes of Pay Day",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 62.1,
+   "y": 70.7,
+   "id": "fortune-11"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 49.3,
+   "y": 79.8,
+   "id": "fortune-12"
+  },
+  {
+   "name": "Broker",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "Cancelling a Marketplace listing refunds its listing fee.",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 35.6,
+   "y": 86.7,
+   "id": "fortune-13"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 84.8,
+   "y": 69.3,
+   "id": "fortune-14"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 57.5,
+   "y": 92.3,
+   "id": "fortune-15"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 96.1,
+   "y": 79.0,
+   "id": "fortune-16"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 64.9,
+   "y": 105.6,
+   "id": "fortune-17"
+  },
+  {
+   "name": "Frugal",
+   "branch": "Fortune",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "-20% Pokemart prices, service prices and ferry fares. -10% money from wild and trainer battles.",
+   "levelReq": 30,
+   "pathCost": 6,
+   "x": 45.9,
+   "y": 109.5,
+   "id": "fortune-18"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": 107.5,
+   "y": 88.5,
+   "id": "fortune-19"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": 72.8,
+   "y": 118.4,
+   "id": "fortune-20"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": 118.7,
+   "y": 98.4,
+   "id": "fortune-21"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": 80.7,
+   "y": 131.1,
+   "id": "fortune-22"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 9,
+   "x": 130.5,
+   "y": 108.2,
+   "id": "fortune-23"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 9,
+   "x": 88.5,
+   "y": 143.6,
+   "id": "fortune-24"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 10,
+   "x": 142.3,
+   "y": 117.4,
+   "id": "fortune-25"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 10,
+   "x": 96.4,
+   "y": 156.7,
+   "id": "fortune-26"
+  },
+  {
+   "name": "Wild Money",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 11,
+   "x": 153.4,
+   "y": 127.9,
+   "id": "fortune-27"
+  },
+  {
+   "name": "Drop Chance",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% drop chance",
+   "levelReq": null,
+   "pathCost": 11,
+   "x": 104.3,
+   "y": 169.8,
+   "id": "fortune-28"
+  },
+  {
+   "name": "Big Earner",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% money from wild battles",
+   "levelReq": null,
+   "pathCost": 12,
+   "x": 165.2,
+   "y": 137.0,
+   "id": "fortune-29"
+  },
+  {
+   "name": "Lucky Find",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% drop chance",
+   "levelReq": null,
+   "pathCost": 12,
+   "x": 112.1,
+   "y": 182.3,
+   "id": "fortune-30"
+  },
+  {
+   "name": "Windfall",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% money from wild battles",
+   "levelReq": null,
+   "pathCost": 13,
+   "x": 176.4,
+   "y": 146.2,
+   "id": "fortune-31"
+  },
+  {
+   "name": "Hoarder",
+   "branch": "Fortune",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% drop chance",
+   "levelReq": null,
+   "pathCost": 13,
+   "x": 120.0,
+   "y": 195.4,
+   "id": "fortune-32"
+  },
+  {
+   "name": "Lone Wanderer",
+   "branch": "Fortune",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "While you're not in a party: +10% money from wild battles and +5% drop chance. You get no Party EXP bonus and no Hunter assist credit.",
+   "levelReq": 30,
+   "pathCost": 15,
+   "x": 193,
+   "y": 160,
+   "id": "fortune-33"
+  },
+  {
+   "name": "Treasure Hunter",
+   "branch": "Fortune",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "+20% drop chance. -10% money from wild battles.",
+   "levelReq": 30,
+   "pathCost": 15,
+   "x": 131,
+   "y": 213,
+   "id": "fortune-34"
+  },
+  {
+   "name": "Tracker",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% hunting exp (multiplies with the Hunter exp perks)",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": -29.3,
+   "y": -42.1,
+   "id": "hunter-01"
+  },
+  {
+   "name": "Hunting Exp",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% hunting exp (multiplies with the Hunter exp perks)",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -48.5,
+   "y": -44.0,
+   "id": "hunter-02"
+  },
+  {
+   "name": "Hunter Tokens",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% Hunter Tokens from contracts",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -43.7,
+   "y": -49.3,
+   "id": "hunter-03"
+  },
+  {
+   "name": "Contract Fees",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "-15% contract cancel and block costs",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -42.4,
+   "y": -59.1,
+   "id": "hunter-04"
+  },
+  {
+   "name": "Elite Chance",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+4% elite chance",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -32.2,
+   "y": -57.8,
+   "id": "hunter-05"
+  },
+  {
+   "name": "Group Battles",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+20% group battle chance with the Hunter's Horn perk",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -26.0,
+   "y": -61.1,
+   "id": "hunter-06"
+  },
+  {
+   "name": "Hunting Exp",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% hunting exp (multiplies with the Hunter exp perks)",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -61.0,
+   "y": -53.8,
+   "id": "hunter-07"
+  },
+  {
+   "name": "Hunter Tokens",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% Hunter Tokens from contracts",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -54.2,
+   "y": -60.0,
+   "id": "hunter-08"
+  },
+  {
+   "name": "Negotiator",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "-35% contract cancel and block costs",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -50.9,
+   "y": -71.6,
+   "id": "hunter-09"
+  },
+  {
+   "name": "Elite Chance",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+4% elite chance",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -39.1,
+   "y": -71.0,
+   "id": "hunter-10"
+  },
+  {
+   "name": "Group Battles",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+20% group battle chance with the Hunter's Horn perk",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -30.6,
+   "y": -74.9,
+   "id": "hunter-11"
+  },
+  {
+   "name": "Hunting Exp",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% hunting exp (multiplies with the Hunter exp perks)",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -73.0,
+   "y": -62.3,
+   "id": "hunter-12"
+  },
+  {
+   "name": "Hunter Tokens",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% Hunter Tokens from contracts",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -64.6,
+   "y": -70.8,
+   "id": "hunter-13"
+  },
+  {
+   "name": "Double Credit",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "2% chance a kill or catch counts twice toward your Hunter contract, rolled separately from Hunter's Tally",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -71.5,
+   "y": -99.0,
+   "id": "hunter-14"
+  },
+  {
+   "name": "Second Wind",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "Once a day, abandoning a contract keeps your streak.",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -62.3,
+   "y": -87.2,
+   "id": "hunter-15"
+  },
+  {
+   "name": "Elite Chance",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+4% elite chance",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -46.3,
+   "y": -84.0,
+   "id": "hunter-16"
+  },
+  {
+   "name": "Group Battles",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+20% group battle chance with the Hunter's Horn perk",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -35.6,
+   "y": -89.3,
+   "id": "hunter-17"
+  },
+  {
+   "name": "Hunting Exp",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% hunting exp (multiplies with the Hunter exp perks)",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -84.6,
+   "y": -72.0,
+   "id": "hunter-18"
+  },
+  {
+   "name": "Bounty Broker",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% Hunter Tokens from contracts; +50% bounty chance (5% -> 7.5% of contracts, Grandmaster Vex 10% -> 15%)",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -75.4,
+   "y": -81.3,
+   "id": "hunter-19"
+  },
+  {
+   "name": "Quick Tally",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "4% chance a kill or catch counts twice toward your Hunter contract, rolled separately from Hunter's Tally",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -80.0,
+   "y": -111.5,
+   "id": "hunter-20"
+  },
+  {
+   "name": "Elite Chance",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+4% elite chance",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -53.1,
+   "y": -97.3,
+   "id": "hunter-21"
+  },
+  {
+   "name": "Pack Tracker",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+40% group battle chance with the Hunter's Horn perk",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -41.1,
+   "y": -103.0,
+   "id": "hunter-22"
+  },
+  {
+   "name": "Hunting Exp",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% hunting exp (multiplies with the Hunter exp perks)",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -95.7,
+   "y": -82.0,
+   "id": "hunter-23"
+  },
+  {
+   "name": "Hunting Exp",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% hunting exp (multiplies with the Hunter exp perks)",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": -107.5,
+   "y": -91.1,
+   "id": "hunter-24"
+  },
+  {
+   "name": "Mark Target",
+   "branch": "Hunter",
+   "type": "skill",
+   "cost": 2,
+   "effect": "Kills and catches count twice toward your Hunter contract for 10 minutes. Cooldown 2 h.",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": -85.2,
+   "y": -92.5,
+   "id": "hunter-25"
+  },
+  {
+   "name": "Elite Tracker",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 2,
+   "effect": "+9% elite chance",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": -61.0,
+   "y": -110.8,
+   "id": "hunter-26"
+  },
+  {
+   "name": "Field Guide",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+6% hunting exp (multiplies with the Hunter exp perks)",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": -118.7,
+   "y": -101.0,
+   "id": "hunter-27"
+  },
+  {
+   "name": "Horde Caller",
+   "branch": "Hunter",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "With the Hunter's Horn perk, every group battle is a horde of 5. -50% group battle chance (1.4% -> 0.7% of encounters).",
+   "levelReq": 30,
+   "pathCost": 8,
+   "x": -49,
+   "y": -123,
+   "id": "hunter-28"
+  },
+  {
+   "name": "Master Hunter",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% hunting exp (multiplies with the Hunter exp perks); +3% Hunter Tokens from contracts",
+   "levelReq": null,
+   "pathCost": 9,
+   "x": -130.5,
+   "y": -110.5,
+   "id": "hunter-29"
+  },
+  {
+   "name": "Token Collector",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 3,
+   "effect": "Elite Token share of elite drops 20% -> 24%",
+   "levelReq": null,
+   "pathCost": 10,
+   "x": -68.2,
+   "y": -123.9,
+   "id": "hunter-30"
+  },
+  {
+   "name": "Wear Down",
+   "branch": "Hunter",
+   "type": "node",
+   "cost": 1,
+   "effect": "Elite HP 6x -> 5x (on maps with a stat boost, 1x less than usual)",
+   "levelReq": null,
+   "pathCost": 11,
+   "x": -75.4,
+   "y": -137.0,
+   "id": "hunter-31"
+  },
+  {
+   "name": "Elite Slayer",
+   "branch": "Hunter",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "+15% elite chance (1 in 200 -> 1 in 174) and +20% Pokemon exp and money from elites. -10% money and drop chance from other wild Pokemon.",
+   "levelReq": 30,
+   "pathCost": 13,
+   "x": -87.2,
+   "y": -159.3,
+   "id": "hunter-32"
+  },
+  {
+   "name": "Rock Hound",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% mining exp",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": 47.5,
+   "y": 14.1,
+   "id": "prospector-01"
+  },
+  {
+   "name": "Mining Exp",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% mining exp",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 65.2,
+   "y": 4.9,
+   "id": "prospector-02"
+  },
+  {
+   "name": "Swing Speed",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "-4% time between mining swings",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 62.1,
+   "y": 18.9,
+   "id": "prospector-03"
+  },
+  {
+   "name": "Double Gems",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to your pickaxe's double gem chance",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 56.1,
+   "y": 32.0,
+   "id": "prospector-04"
+  },
+  {
+   "name": "Mining Exp",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% mining exp",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 80.0,
+   "y": 4.9,
+   "id": "prospector-05"
+  },
+  {
+   "name": "Swing Speed",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "-4% time between mining swings",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 76.2,
+   "y": 23.1,
+   "id": "prospector-06"
+  },
+  {
+   "name": "Double Gems",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to your pickaxe's double gem chance",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 68.7,
+   "y": 39.8,
+   "id": "prospector-07"
+  },
+  {
+   "name": "Mining Exp",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% mining exp",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 95.1,
+   "y": 4.6,
+   "id": "prospector-08"
+  },
+  {
+   "name": "Swing Speed",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "-4% time between mining swings",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 90.8,
+   "y": 27.9,
+   "id": "prospector-09"
+  },
+  {
+   "name": "Cluster",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to your pickaxe's double gem chance",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 80.8,
+   "y": 49.0,
+   "id": "prospector-10"
+  },
+  {
+   "name": "Mining Exp",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% mining exp",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 110.2,
+   "y": 5.9,
+   "id": "prospector-11"
+  },
+  {
+   "name": "Pickaxe Power",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 1% to each swing's chance to break the rock",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 104.9,
+   "y": 32.5,
+   "id": "prospector-12"
+  },
+  {
+   "name": "Mining Exp",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% mining exp",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 125.2,
+   "y": 6.6,
+   "id": "prospector-13"
+  },
+  {
+   "name": "Pickaxe Power",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 1% to each swing's chance to break the rock",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 119.3,
+   "y": 37.0,
+   "id": "prospector-14"
+  },
+  {
+   "name": "Appraiser",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 2,
+   "effect": "+4% gem sell price",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 93.8,
+   "y": 56.7,
+   "id": "prospector-15"
+  },
+  {
+   "name": "Mining Exp",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% mining exp",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": 140.3,
+   "y": 7.9,
+   "id": "prospector-16"
+  },
+  {
+   "name": "Heavy Swing",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 1% to each swing's chance to break the rock",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": 133.8,
+   "y": 41.6,
+   "id": "prospector-17"
+  },
+  {
+   "name": "Rich Vein",
+   "branch": "Prospector",
+   "type": "skill",
+   "cost": 1,
+   "effect": "2x gems on your next 5 gem drops from mining. Rainbow Gemstones don't count. Cooldown 30 min.",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": 106.6,
+   "y": 64.6,
+   "id": "prospector-18"
+  },
+  {
+   "name": "Fossil Find",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "Every rock you break has a 1% chance to also give a fossil shard. Dark, Lava and Rainbow Rocks can give any shard, other rocks Helix, Dome or Amber.",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": 147.9,
+   "y": 46.2,
+   "id": "prospector-19"
+  },
+  {
+   "name": "Prospect",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "-33% Rich Vein cooldown",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": 119.3,
+   "y": 72.5,
+   "id": "prospector-20"
+  },
+  {
+   "name": "Seasoned Miner",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 2,
+   "effect": "+6% mining exp",
+   "levelReq": null,
+   "pathCost": 9,
+   "x": 155.4,
+   "y": 9.2,
+   "id": "prospector-21"
+  },
+  {
+   "name": "Master Miner",
+   "branch": "Prospector",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% mining exp; -3% time between mining swings",
+   "levelReq": null,
+   "pathCost": 10,
+   "x": 174.4,
+   "y": 10.5,
+   "id": "prospector-22"
+  },
+  {
+   "name": "Deep Core",
+   "branch": "Prospector",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "Adds 5% to your pickaxe's double gem chance. Rocks never start a wild battle, so gems drop on 98% of breaks instead of 87%. -8% gem sell price.",
+   "levelReq": 30,
+   "pathCost": 11,
+   "x": 134.8,
+   "y": 85.2,
+   "id": "prospector-23"
+  },
+  {
+   "name": "Seismic Sense",
+   "branch": "Prospector",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "Wild battles from rocks 11% -> 22% of breaks, and those battles pay +50% mining exp. Gems 87% -> 76% of breaks.",
+   "levelReq": 30,
+   "pathCost": 13,
+   "x": 195,
+   "y": 12,
+   "id": "prospector-24"
+  },
+  {
+   "name": "Wild Instincts",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% encounter rates; +1% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": 0.3,
+   "y": -51.3,
+   "id": "seeker-01"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -14.1,
+   "y": -64.6,
+   "id": "seeker-02"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -4.6,
+   "y": -66.4,
+   "id": "seeker-03"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 4.9,
+   "y": -66.2,
+   "id": "seeker-04"
+  },
+  {
+   "name": "Longer Lures",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5 minutes on Honey and Shiny Lures you place",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": 14.1,
+   "y": -65.1,
+   "id": "seeker-05"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -18.1,
+   "y": -79.5,
+   "id": "seeker-06"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -6.2,
+   "y": -81.5,
+   "id": "seeker-07"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 6.2,
+   "y": -80.8,
+   "id": "seeker-08"
+  },
+  {
+   "name": "Longer Lures",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5 minutes on Honey and Shiny Lures you place",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": 18.7,
+   "y": -79.5,
+   "id": "seeker-09"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -22.7,
+   "y": -93.3,
+   "id": "seeker-10"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -7.5,
+   "y": -95.7,
+   "id": "seeker-11"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 8.2,
+   "y": -96.1,
+   "id": "seeker-12"
+  },
+  {
+   "name": "Beekeeper",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5 minutes on Honey and Shiny Lures you place",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": 23.3,
+   "y": -93.3,
+   "id": "seeker-13"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -26.7,
+   "y": -107.5,
+   "id": "seeker-14"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -8.9,
+   "y": -110.8,
+   "id": "seeker-15"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": 8.9,
+   "y": -110.8,
+   "id": "seeker-16"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -30.2,
+   "y": -122.6,
+   "id": "seeker-17"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -10.2,
+   "y": -125.9,
+   "id": "seeker-18"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": 10.2,
+   "y": -125.9,
+   "id": "seeker-19"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": 11.5,
+   "y": -140.7,
+   "id": "seeker-20"
+  },
+  {
+   "name": "Pilgrim",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "10% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": -33.9,
+   "y": -137.0,
+   "id": "seeker-21"
+  },
+  {
+   "name": "Keen Eye",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+2% encounter rates",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": -11.4,
+   "y": -141.0,
+   "id": "seeker-22"
+  },
+  {
+   "name": "Glimmer",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+2.5% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 9,
+   "x": 12.8,
+   "y": -155.4,
+   "id": "seeker-23"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 10,
+   "x": -37.4,
+   "y": -151.5,
+   "id": "seeker-24"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 10,
+   "x": -12.2,
+   "y": -155.4,
+   "id": "seeker-25"
+  },
+  {
+   "name": "Sweet Scent",
+   "branch": "Seeker",
+   "type": "skill",
+   "cost": 3,
+   "effect": "+15% encounter rates for 10 minutes. Cooldown 1 h.",
+   "levelReq": null,
+   "pathCost": 11,
+   "x": 0.3,
+   "y": -160.0,
+   "id": "seeker-26"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 11,
+   "x": 14.1,
+   "y": -170.8,
+   "id": "seeker-27"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 12,
+   "x": -41.1,
+   "y": -166.1,
+   "id": "seeker-28"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 12,
+   "x": -13.6,
+   "y": -170.5,
+   "id": "seeker-29"
+  },
+  {
+   "name": "Lingering Scent",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+5 minutes of Sweet Scent",
+   "levelReq": null,
+   "pathCost": 13,
+   "x": 0.3,
+   "y": -173.8,
+   "id": "seeker-30"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 13,
+   "x": 15.4,
+   "y": -185.6,
+   "id": "seeker-31"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 14,
+   "x": -45.0,
+   "y": -181.0,
+   "id": "seeker-32"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 14,
+   "x": -14.9,
+   "y": -185.6,
+   "id": "seeker-33"
+  },
+  {
+   "name": "Scent Trail",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "-25% Sweet Scent cooldown",
+   "levelReq": null,
+   "pathCost": 15,
+   "x": 0.3,
+   "y": -187.5,
+   "id": "seeker-34"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 15,
+   "x": 16,
+   "y": -201,
+   "id": "seeker-35"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 16,
+   "x": -48.3,
+   "y": -195.4,
+   "id": "seeker-36"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 16,
+   "x": -16,
+   "y": -201,
+   "id": "seeker-37"
+  },
+  {
+   "name": "Shared Scent",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 1,
+   "effect": "When you use Sweet Scent, party members on your map who fought a wild Pokemon in the last 2 minutes get it too. It starts their own Sweet Scent cooldown and skips anyone whose cooldown is running.",
+   "levelReq": 30,
+   "pathCost": 16,
+   "x": 0,
+   "y": -201,
+   "id": "seeker-38"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 17,
+   "x": 17,
+   "y": -216,
+   "id": "seeker-39"
+  },
+  {
+   "name": "Double Legendary Tokens",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "3% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 18,
+   "x": -52,
+   "y": -211,
+   "id": "seeker-40"
+  },
+  {
+   "name": "Encounter Rates",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1% encounter rates",
+   "levelReq": null,
+   "pathCost": 18,
+   "x": -17,
+   "y": -216,
+   "id": "seeker-41"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 19,
+   "x": 19,
+   "y": -231,
+   "id": "seeker-42"
+  },
+  {
+   "name": "Ancient Call",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "10% chance for double legendary tokens",
+   "levelReq": null,
+   "pathCost": 20,
+   "x": -56,
+   "y": -225,
+   "id": "seeker-43"
+  },
+  {
+   "name": "Rare Finds",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+2% encounter rates",
+   "levelReq": null,
+   "pathCost": 20,
+   "x": -19,
+   "y": -231,
+   "id": "seeker-44"
+  },
+  {
+   "name": "Shiny Chance",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+1.2% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 21,
+   "x": 20,
+   "y": -246,
+   "id": "seeker-45"
+  },
+  {
+   "name": "Rare Hunter",
+   "branch": "Seeker",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "+6% encounter rates. -15% shiny chance.",
+   "levelReq": 30,
+   "pathCost": 22,
+   "x": -21,
+   "y": -252,
+   "id": "seeker-46"
+  },
+  {
+   "name": "Pilgrim's Vow",
+   "branch": "Seeker",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "+25% chance for double legendary tokens. -15% shiny chance.",
+   "levelReq": 30,
+   "pathCost": 23,
+   "x": -61,
+   "y": -246,
+   "id": "seeker-47"
+  },
+  {
+   "name": "Shining Path",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 2,
+   "effect": "+2.1% shiny chance on wild Pokemon",
+   "levelReq": null,
+   "pathCost": 23,
+   "x": 21,
+   "y": -260,
+   "id": "seeker-48"
+  },
+  {
+   "name": "Shiny Obsession",
+   "branch": "Seeker",
+   "type": "keystone",
+   "cost": 2,
+   "effect": "+10% shiny chance on wild Pokemon. -20% encounter rates.",
+   "levelReq": 30,
+   "pathCost": 25,
+   "x": 23,
+   "y": -281,
+   "id": "seeker-49"
+  },
+  {
+   "name": "Shiny Bond",
+   "branch": "Seeker",
+   "type": "node",
+   "cost": 5,
+   "effect": "Synchronize always works on shiny Pokemon.",
+   "levelReq": 50,
+   "pathCost": 28,
+   "x": 47,
+   "y": -271,
+   "id": "seeker-50"
+  },
+  {
+   "name": "Battle Ready",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+2% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 1,
+   "x": -47.7,
+   "y": 14.2,
+   "id": "trainer-01"
+  },
+  {
+   "name": "Pokemon Exp",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.5% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -55.8,
+   "y": 31.7,
+   "id": "trainer-02"
+  },
+  {
+   "name": "Power Training",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1 to every EV a wild Pokemon you knock out gives, before a Macho Brace or Gold Effort Brace doubles it.",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -60.3,
+   "y": 23.3,
+   "id": "trainer-03"
+  },
+  {
+   "name": "Trainer Battle Exp",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% Pokemon exp from trainer battles",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -61.6,
+   "y": 14.4,
+   "id": "trainer-04"
+  },
+  {
+   "name": "Rematch Prizes",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+20% money and Pokemon exp from gym leaders and the Elite Four",
+   "levelReq": null,
+   "pathCost": 2,
+   "x": -64.9,
+   "y": 4.9,
+   "id": "trainer-05"
+  },
+  {
+   "name": "Pokemon Exp",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.5% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -68.5,
+   "y": 40.2,
+   "id": "trainer-06"
+  },
+  {
+   "name": "Exp Share",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to the part of a battle's exp your Exp Share holders get (50% base, 75% with Exp Share (Enhanced))",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -74.1,
+   "y": 29.5,
+   "id": "trainer-07"
+  },
+  {
+   "name": "Trainer Battle Exp",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% Pokemon exp from trainer battles",
+   "levelReq": null,
+   "pathCost": 3,
+   "x": -78.0,
+   "y": 17.7,
+   "id": "trainer-08"
+  },
+  {
+   "name": "Pokemon Exp",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.5% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -80.7,
+   "y": 49.2,
+   "id": "trainer-09"
+  },
+  {
+   "name": "Exp Share",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to the part of a battle's exp your Exp Share holders get (50% base, 75% with Exp Share (Enhanced))",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -87.9,
+   "y": 35.4,
+   "id": "trainer-10"
+  },
+  {
+   "name": "Gym Regular",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 2,
+   "effect": "+30% money and Pokemon exp from gym leaders and the Elite Four; -20% gym leader and Elite Four rematch time",
+   "levelReq": null,
+   "pathCost": 4,
+   "x": -80.0,
+   "y": 5.2,
+   "id": "trainer-11"
+  },
+  {
+   "name": "Pokemon Exp",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.5% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -93.6,
+   "y": 57.0,
+   "id": "trainer-12"
+  },
+  {
+   "name": "Mentor",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "Adds 2% to the part of a battle's exp your Exp Share holders get (50% base, 75% with Exp Share (Enhanced))",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -101.6,
+   "y": 41.3,
+   "id": "trainer-13"
+  },
+  {
+   "name": "Coach",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 2,
+   "effect": "+4% Pokemon exp from trainer battles; +10% money from trainer battles",
+   "levelReq": null,
+   "pathCost": 5,
+   "x": -92.5,
+   "y": 21.0,
+   "id": "trainer-14"
+  },
+  {
+   "name": "Pokemon Exp",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.5% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -106.2,
+   "y": 64.9,
+   "id": "trainer-15"
+  },
+  {
+   "name": "Tutor",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "Party members on your map below trainer level 50, and below yours, get +25% trainer exp from wild battles while you're fighting wild Pokemon there too.",
+   "levelReq": 30,
+   "pathCost": 6,
+   "x": -115,
+   "y": 47,
+   "id": "trainer-16"
+  },
+  {
+   "name": "Trainer Money",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5% money from trainer battles",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -107.2,
+   "y": 24.3,
+   "id": "trainer-17"
+  },
+  {
+   "name": "Rematch Call",
+   "branch": "Trainer",
+   "type": "skill",
+   "cost": 2,
+   "effect": "For 20 minutes, gym leaders and the Elite Four have no rematch wait and pay +50% money and Pokemon exp. Cooldown 2 h.",
+   "levelReq": null,
+   "pathCost": 6,
+   "x": -99.0,
+   "y": 5.9,
+   "id": "trainer-18"
+  },
+  {
+   "name": "Pokemon Exp",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1.5% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": -118.7,
+   "y": 72.8,
+   "id": "trainer-19"
+  },
+  {
+   "name": "Prize Purse",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+5% money from trainer battles",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": -121.8,
+   "y": 27.5,
+   "id": "trainer-20"
+  },
+  {
+   "name": "Challenger",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "-25% Rematch Call cooldown",
+   "levelReq": null,
+   "pathCost": 7,
+   "x": -118.0,
+   "y": 7.2,
+   "id": "trainer-21"
+  },
+  {
+   "name": "Fast Learner",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+3% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 8,
+   "x": -131.8,
+   "y": 80.7,
+   "id": "trainer-22"
+  },
+  {
+   "name": "Prodigy",
+   "branch": "Trainer",
+   "type": "node",
+   "cost": 1,
+   "effect": "+1% Pokemon exp",
+   "levelReq": null,
+   "pathCost": 9,
+   "x": -144.3,
+   "y": 89.2,
+   "id": "trainer-23"
+  },
+  {
+   "name": "Monotype Specialist",
+   "branch": "Trainer",
+   "type": "keystone",
+   "cost": 3,
+   "effect": "If every Pokemon in your party shares a type: +10% Pokemon exp from every battle and +15% money from trainer battles. Otherwise -10% Pokemon exp.",
+   "levelReq": 30,
+   "pathCost": 12,
+   "x": -161.3,
+   "y": 101.0,
+   "id": "trainer-24"
+  }
+ ],
+ "edges": [
+  [
+   "angler-01",
+   "angler-02"
+  ],
+  [
+   "angler-01",
+   "angler-03"
+  ],
+  [
+   "angler-01",
+   "angler-04"
+  ],
+  [
+   "angler-01",
+   "angler-05"
+  ],
+  [
+   "angler-01",
+   "angler-06"
+  ],
+  [
+   "angler-01",
+   "root"
+  ],
+  [
+   "angler-02",
+   "angler-07"
+  ],
+  [
+   "angler-03",
+   "angler-08"
+  ],
+  [
+   "angler-04",
+   "angler-09"
+  ],
+  [
+   "angler-05",
+   "angler-10"
+  ],
+  [
+   "angler-06",
+   "angler-11"
+  ],
+  [
+   "angler-07",
+   "angler-08"
+  ],
+  [
+   "angler-07",
+   "angler-12"
+  ],
+  [
+   "angler-08",
+   "angler-13"
+  ],
+  [
+   "angler-09",
+   "angler-10"
+  ],
+  [
+   "angler-09",
+   "angler-14"
+  ],
+  [
+   "angler-10",
+   "angler-15"
+  ],
+  [
+   "angler-12",
+   "angler-16"
+  ],
+  [
+   "angler-13",
+   "angler-17"
+  ],
+  [
+   "angler-14",
+   "angler-18"
+  ],
+  [
+   "angler-15",
+   "angler-19"
+  ],
+  [
+   "angler-16",
+   "angler-20"
+  ],
+  [
+   "angler-18",
+   "angler-21"
+  ],
+  [
+   "angler-20",
+   "angler-22"
+  ],
+  [
+   "angler-21",
+   "angler-23"
+  ],
+  [
+   "angler-22",
+   "angler-24"
+  ],
+  [
+   "angler-24",
+   "angler-25"
+  ],
+  [
+   "angler-25",
+   "angler-26"
+  ],
+  [
+   "battler-01",
+   "battler-02"
+  ],
+  [
+   "battler-01",
+   "battler-03"
+  ],
+  [
+   "battler-01",
+   "battler-04"
+  ],
+  [
+   "battler-01",
+   "root"
+  ],
+  [
+   "battler-02",
+   "battler-05"
+  ],
+  [
+   "battler-03",
+   "battler-06"
+  ],
+  [
+   "battler-04",
+   "battler-07"
+  ],
+  [
+   "battler-05",
+   "battler-06"
+  ],
+  [
+   "battler-05",
+   "battler-08"
+  ],
+  [
+   "battler-06",
+   "battler-09"
+  ],
+  [
+   "battler-07",
+   "battler-10"
+  ],
+  [
+   "battler-08",
+   "battler-12"
+  ],
+  [
+   "battler-09",
+   "battler-11"
+  ],
+  [
+   "battler-11",
+   "battler-13"
+  ],
+  [
+   "battler-12",
+   "battler-14"
+  ],
+  [
+   "battler-12",
+   "battler-15"
+  ],
+  [
+   "battler-13",
+   "battler-16"
+  ],
+  [
+   "breeder-01",
+   "breeder-02"
+  ],
+  [
+   "breeder-01",
+   "breeder-03"
+  ],
+  [
+   "breeder-01",
+   "root"
+  ],
+  [
+   "breeder-02",
+   "breeder-04"
+  ],
+  [
+   "breeder-03",
+   "breeder-05"
+  ],
+  [
+   "breeder-04",
+   "breeder-07"
+  ],
+  [
+   "breeder-05",
+   "breeder-06"
+  ],
+  [
+   "breeder-06",
+   "breeder-08"
+  ],
+  [
+   "breeder-07",
+   "breeder-09"
+  ],
+  [
+   "breeder-09",
+   "breeder-10"
+  ],
+  [
+   "breeder-10",
+   "breeder-11"
+  ],
+  [
+   "breeder-11",
+   "breeder-12"
+  ],
+  [
+   "collector-01",
+   "collector-02"
+  ],
+  [
+   "collector-01",
+   "collector-03"
+  ],
+  [
+   "collector-01",
+   "collector-04"
+  ],
+  [
+   "collector-01",
+   "collector-05"
+  ],
+  [
+   "collector-01",
+   "collector-06"
+  ],
+  [
+   "collector-01",
+   "root"
+  ],
+  [
+   "collector-02",
+   "collector-07"
+  ],
+  [
+   "collector-03",
+   "collector-08"
+  ],
+  [
+   "collector-04",
+   "collector-13"
+  ],
+  [
+   "collector-05",
+   "collector-09"
+  ],
+  [
+   "collector-06",
+   "collector-10"
+  ],
+  [
+   "collector-07",
+   "collector-11"
+  ],
+  [
+   "collector-08",
+   "collector-12"
+  ],
+  [
+   "collector-09",
+   "collector-10"
+  ],
+  [
+   "collector-09",
+   "collector-14"
+  ],
+  [
+   "collector-10",
+   "collector-15"
+  ],
+  [
+   "collector-11",
+   "collector-19"
+  ],
+  [
+   "collector-12",
+   "collector-16"
+  ],
+  [
+   "collector-14",
+   "collector-17"
+  ],
+  [
+   "collector-15",
+   "collector-18"
+  ],
+  [
+   "collector-16",
+   "collector-20"
+  ],
+  [
+   "collector-17",
+   "collector-21"
+  ],
+  [
+   "collector-18",
+   "collector-22"
+  ],
+  [
+   "collector-20",
+   "collector-23"
+  ],
+  [
+   "collector-23",
+   "collector-24"
+  ],
+  [
+   "collector-24",
+   "collector-25"
+  ],
+  [
+   "explorer-01",
+   "explorer-02"
+  ],
+  [
+   "explorer-01",
+   "explorer-03"
+  ],
+  [
+   "explorer-01",
+   "explorer-04"
+  ],
+  [
+   "explorer-01",
+   "root"
+  ],
+  [
+   "explorer-02",
+   "explorer-05"
+  ],
+  [
+   "explorer-03",
+   "explorer-06"
+  ],
+  [
+   "explorer-04",
+   "explorer-07"
+  ],
+  [
+   "explorer-05",
+   "explorer-08"
+  ],
+  [
+   "explorer-05",
+   "explorer-14"
+  ],
+  [
+   "explorer-06",
+   "explorer-09"
+  ],
+  [
+   "explorer-07",
+   "explorer-12"
+  ],
+  [
+   "explorer-08",
+   "explorer-10"
+  ],
+  [
+   "explorer-09",
+   "explorer-11"
+  ],
+  [
+   "explorer-10",
+   "explorer-13"
+  ],
+  [
+   "explorer-11",
+   "explorer-15"
+  ],
+  [
+   "explorer-13",
+   "explorer-16"
+  ],
+  [
+   "explorer-15",
+   "explorer-17"
+  ],
+  [
+   "explorer-15",
+   "explorer-18"
+  ],
+  [
+   "fortune-01",
+   "fortune-02"
+  ],
+  [
+   "fortune-01",
+   "fortune-03"
+  ],
+  [
+   "fortune-01",
+   "fortune-04"
+  ],
+  [
+   "fortune-01",
+   "fortune-05"
+  ],
+  [
+   "fortune-01",
+   "root"
+  ],
+  [
+   "fortune-02",
+   "fortune-06"
+  ],
+  [
+   "fortune-03",
+   "fortune-07"
+  ],
+  [
+   "fortune-04",
+   "fortune-08"
+  ],
+  [
+   "fortune-05",
+   "fortune-09"
+  ],
+  [
+   "fortune-06",
+   "fortune-07"
+  ],
+  [
+   "fortune-06",
+   "fortune-10"
+  ],
+  [
+   "fortune-07",
+   "fortune-08"
+  ],
+  [
+   "fortune-07",
+   "fortune-11"
+  ],
+  [
+   "fortune-08",
+   "fortune-12"
+  ],
+  [
+   "fortune-09",
+   "fortune-13"
+  ],
+  [
+   "fortune-10",
+   "fortune-14"
+  ],
+  [
+   "fortune-12",
+   "fortune-15"
+  ],
+  [
+   "fortune-13",
+   "fortune-18"
+  ],
+  [
+   "fortune-14",
+   "fortune-16"
+  ],
+  [
+   "fortune-15",
+   "fortune-17"
+  ],
+  [
+   "fortune-16",
+   "fortune-19"
+  ],
+  [
+   "fortune-17",
+   "fortune-20"
+  ],
+  [
+   "fortune-19",
+   "fortune-21"
+  ],
+  [
+   "fortune-20",
+   "fortune-22"
+  ],
+  [
+   "fortune-21",
+   "fortune-23"
+  ],
+  [
+   "fortune-22",
+   "fortune-24"
+  ],
+  [
+   "fortune-23",
+   "fortune-25"
+  ],
+  [
+   "fortune-24",
+   "fortune-26"
+  ],
+  [
+   "fortune-25",
+   "fortune-27"
+  ],
+  [
+   "fortune-26",
+   "fortune-28"
+  ],
+  [
+   "fortune-27",
+   "fortune-29"
+  ],
+  [
+   "fortune-28",
+   "fortune-30"
+  ],
+  [
+   "fortune-29",
+   "fortune-31"
+  ],
+  [
+   "fortune-30",
+   "fortune-32"
+  ],
+  [
+   "fortune-31",
+   "fortune-33"
+  ],
+  [
+   "fortune-32",
+   "fortune-34"
+  ],
+  [
+   "hunter-01",
+   "hunter-02"
+  ],
+  [
+   "hunter-01",
+   "hunter-03"
+  ],
+  [
+   "hunter-01",
+   "hunter-04"
+  ],
+  [
+   "hunter-01",
+   "hunter-05"
+  ],
+  [
+   "hunter-01",
+   "hunter-06"
+  ],
+  [
+   "hunter-01",
+   "root"
+  ],
+  [
+   "hunter-02",
+   "hunter-07"
+  ],
+  [
+   "hunter-03",
+   "hunter-08"
+  ],
+  [
+   "hunter-04",
+   "hunter-09"
+  ],
+  [
+   "hunter-05",
+   "hunter-10"
+  ],
+  [
+   "hunter-06",
+   "hunter-11"
+  ],
+  [
+   "hunter-07",
+   "hunter-08"
+  ],
+  [
+   "hunter-07",
+   "hunter-12"
+  ],
+  [
+   "hunter-08",
+   "hunter-13"
+  ],
+  [
+   "hunter-09",
+   "hunter-13"
+  ],
+  [
+   "hunter-09",
+   "hunter-15"
+  ],
+  [
+   "hunter-10",
+   "hunter-14"
+  ],
+  [
+   "hunter-10",
+   "hunter-16"
+  ],
+  [
+   "hunter-11",
+   "hunter-17"
+  ],
+  [
+   "hunter-12",
+   "hunter-18"
+  ],
+  [
+   "hunter-13",
+   "hunter-19"
+  ],
+  [
+   "hunter-14",
+   "hunter-15"
+  ],
+  [
+   "hunter-14",
+   "hunter-20"
+  ],
+  [
+   "hunter-16",
+   "hunter-21"
+  ],
+  [
+   "hunter-17",
+   "hunter-22"
+  ],
+  [
+   "hunter-18",
+   "hunter-23"
+  ],
+  [
+   "hunter-19",
+   "hunter-25"
+  ],
+  [
+   "hunter-21",
+   "hunter-26"
+  ],
+  [
+   "hunter-22",
+   "hunter-28"
+  ],
+  [
+   "hunter-23",
+   "hunter-24"
+  ],
+  [
+   "hunter-24",
+   "hunter-27"
+  ],
+  [
+   "hunter-26",
+   "hunter-30"
+  ],
+  [
+   "hunter-27",
+   "hunter-29"
+  ],
+  [
+   "hunter-30",
+   "hunter-31"
+  ],
+  [
+   "hunter-31",
+   "hunter-32"
+  ],
+  [
+   "prospector-01",
+   "prospector-02"
+  ],
+  [
+   "prospector-01",
+   "prospector-03"
+  ],
+  [
+   "prospector-01",
+   "prospector-04"
+  ],
+  [
+   "prospector-01",
+   "root"
+  ],
+  [
+   "prospector-02",
+   "prospector-05"
+  ],
+  [
+   "prospector-03",
+   "prospector-06"
+  ],
+  [
+   "prospector-04",
+   "prospector-07"
+  ],
+  [
+   "prospector-05",
+   "prospector-06"
+  ],
+  [
+   "prospector-05",
+   "prospector-08"
+  ],
+  [
+   "prospector-06",
+   "prospector-09"
+  ],
+  [
+   "prospector-07",
+   "prospector-09"
+  ],
+  [
+   "prospector-07",
+   "prospector-10"
+  ],
+  [
+   "prospector-08",
+   "prospector-11"
+  ],
+  [
+   "prospector-09",
+   "prospector-12"
+  ],
+  [
+   "prospector-10",
+   "prospector-15"
+  ],
+  [
+   "prospector-11",
+   "prospector-13"
+  ],
+  [
+   "prospector-12",
+   "prospector-14"
+  ],
+  [
+   "prospector-13",
+   "prospector-16"
+  ],
+  [
+   "prospector-14",
+   "prospector-17"
+  ],
+  [
+   "prospector-15",
+   "prospector-18"
+  ],
+  [
+   "prospector-16",
+   "prospector-21"
+  ],
+  [
+   "prospector-17",
+   "prospector-19"
+  ],
+  [
+   "prospector-18",
+   "prospector-20"
+  ],
+  [
+   "prospector-20",
+   "prospector-23"
+  ],
+  [
+   "prospector-21",
+   "prospector-22"
+  ],
+  [
+   "prospector-22",
+   "prospector-24"
+  ],
+  [
+   "root",
+   "seeker-01"
+  ],
+  [
+   "root",
+   "trainer-01"
+  ],
+  [
+   "seeker-01",
+   "seeker-02"
+  ],
+  [
+   "seeker-01",
+   "seeker-03"
+  ],
+  [
+   "seeker-01",
+   "seeker-04"
+  ],
+  [
+   "seeker-01",
+   "seeker-05"
+  ],
+  [
+   "seeker-02",
+   "seeker-06"
+  ],
+  [
+   "seeker-03",
+   "seeker-07"
+  ],
+  [
+   "seeker-04",
+   "seeker-08"
+  ],
+  [
+   "seeker-05",
+   "seeker-09"
+  ],
+  [
+   "seeker-06",
+   "seeker-07"
+  ],
+  [
+   "seeker-06",
+   "seeker-10"
+  ],
+  [
+   "seeker-07",
+   "seeker-11"
+  ],
+  [
+   "seeker-08",
+   "seeker-12"
+  ],
+  [
+   "seeker-09",
+   "seeker-13"
+  ],
+  [
+   "seeker-10",
+   "seeker-14"
+  ],
+  [
+   "seeker-11",
+   "seeker-12"
+  ],
+  [
+   "seeker-11",
+   "seeker-15"
+  ],
+  [
+   "seeker-12",
+   "seeker-16"
+  ],
+  [
+   "seeker-14",
+   "seeker-17"
+  ],
+  [
+   "seeker-15",
+   "seeker-18"
+  ],
+  [
+   "seeker-16",
+   "seeker-19"
+  ],
+  [
+   "seeker-17",
+   "seeker-21"
+  ],
+  [
+   "seeker-18",
+   "seeker-22"
+  ],
+  [
+   "seeker-19",
+   "seeker-20"
+  ],
+  [
+   "seeker-20",
+   "seeker-23"
+  ],
+  [
+   "seeker-21",
+   "seeker-24"
+  ],
+  [
+   "seeker-22",
+   "seeker-25"
+  ],
+  [
+   "seeker-22",
+   "seeker-26"
+  ],
+  [
+   "seeker-23",
+   "seeker-27"
+  ],
+  [
+   "seeker-24",
+   "seeker-28"
+  ],
+  [
+   "seeker-25",
+   "seeker-29"
+  ],
+  [
+   "seeker-26",
+   "seeker-30"
+  ],
+  [
+   "seeker-27",
+   "seeker-31"
+  ],
+  [
+   "seeker-28",
+   "seeker-32"
+  ],
+  [
+   "seeker-29",
+   "seeker-33"
+  ],
+  [
+   "seeker-30",
+   "seeker-34"
+  ],
+  [
+   "seeker-31",
+   "seeker-35"
+  ],
+  [
+   "seeker-32",
+   "seeker-36"
+  ],
+  [
+   "seeker-33",
+   "seeker-37"
+  ],
+  [
+   "seeker-34",
+   "seeker-38"
+  ],
+  [
+   "seeker-35",
+   "seeker-39"
+  ],
+  [
+   "seeker-36",
+   "seeker-40"
+  ],
+  [
+   "seeker-37",
+   "seeker-41"
+  ],
+  [
+   "seeker-39",
+   "seeker-42"
+  ],
+  [
+   "seeker-40",
+   "seeker-43"
+  ],
+  [
+   "seeker-41",
+   "seeker-44"
+  ],
+  [
+   "seeker-42",
+   "seeker-45"
+  ],
+  [
+   "seeker-43",
+   "seeker-47"
+  ],
+  [
+   "seeker-44",
+   "seeker-46"
+  ],
+  [
+   "seeker-45",
+   "seeker-48"
+  ],
+  [
+   "seeker-48",
+   "seeker-49"
+  ],
+  [
+   "seeker-48",
+   "seeker-50"
+  ],
+  [
+   "trainer-01",
+   "trainer-02"
+  ],
+  [
+   "trainer-01",
+   "trainer-03"
+  ],
+  [
+   "trainer-01",
+   "trainer-04"
+  ],
+  [
+   "trainer-01",
+   "trainer-05"
+  ],
+  [
+   "trainer-02",
+   "trainer-06"
+  ],
+  [
+   "trainer-03",
+   "trainer-07"
+  ],
+  [
+   "trainer-04",
+   "trainer-05"
+  ],
+  [
+   "trainer-04",
+   "trainer-08"
+  ],
+  [
+   "trainer-05",
+   "trainer-11"
+  ],
+  [
+   "trainer-06",
+   "trainer-07"
+  ],
+  [
+   "trainer-06",
+   "trainer-09"
+  ],
+  [
+   "trainer-07",
+   "trainer-10"
+  ],
+  [
+   "trainer-08",
+   "trainer-14"
+  ],
+  [
+   "trainer-09",
+   "trainer-12"
+  ],
+  [
+   "trainer-10",
+   "trainer-13"
+  ],
+  [
+   "trainer-11",
+   "trainer-18"
+  ],
+  [
+   "trainer-12",
+   "trainer-15"
+  ],
+  [
+   "trainer-13",
+   "trainer-16"
+  ],
+  [
+   "trainer-14",
+   "trainer-17"
+  ],
+  [
+   "trainer-15",
+   "trainer-19"
+  ],
+  [
+   "trainer-17",
+   "trainer-20"
+  ],
+  [
+   "trainer-18",
+   "trainer-21"
+  ],
+  [
+   "trainer-19",
+   "trainer-22"
+  ],
+  [
+   "trainer-22",
+   "trainer-23"
+  ],
+  [
+   "trainer-23",
+   "trainer-24"
+  ]
+ ]
+}

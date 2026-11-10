@@ -1,0 +1,262 @@
+id,name,branch,type,cost,path_cost,level_req,effect,connects_to,x,y
+angler-01,Fishing License,Angler,node,1,1,,+3% fishing exp,angler-02 angler-03 angler-04 angler-05 angler-06 root,48.0,-16.7
+angler-02,Fishing Exp,Angler,node,1,2,,+3% fishing exp,angler-01 angler-07,59.3,-28.2
+angler-03,Bite Wait,Angler,node,1,2,,-3% bite wait (every rod but the AFK Rod),angler-01 angler-08,62.0,-21.5
+angler-04,Fishing Encounter Rates,Angler,node,1,2,,+2% encounter rates while fishing,angler-01 angler-09,63.9,-14.6
+angler-05,Fished Exp,Angler,node,1,2,,+2% Pokemon exp from Pokemon you fish up,angler-01 angler-10,65.2,-7.4
+angler-06,Feeding Frenzy,Angler,skill,2,3,,+15% fishing exp and -30% bite wait (every rod but the AFK Rod) for 10 minutes. Cooldown 45 min.,angler-01 angler-11,60.7,-37.5
+angler-07,Fishing Exp,Angler,node,1,3,,+3% fishing exp,angler-02 angler-08 angler-12,73.1,-34.8
+angler-08,Bite Wait,Angler,node,1,3,,-3% bite wait (every rod but the AFK Rod),angler-03 angler-07 angler-13,76.4,-26.1
+angler-09,Fishing Encounter Rates,Angler,node,1,3,,+2% encounter rates while fishing,angler-04 angler-10 angler-14,78.9,-17.0
+angler-10,Fished Exp,Angler,node,1,3,,+2% Pokemon exp from Pokemon you fish up,angler-05 angler-09 angler-15,79.8,-8.0
+angler-11,Chum,Angler,node,1,4,,-33% Feeding Frenzy cooldown,angler-06,73.1,-45.9
+angler-12,Fishing Exp,Angler,node,1,4,,+3% fishing exp,angler-07 angler-16,86.2,-41.5
+angler-13,Bite Wait,Angler,node,1,4,,-3% bite wait (every rod but the AFK Rod),angler-08 angler-17,91.1,-30.8
+angler-14,Deep Water,Angler,node,1,4,,+4% encounter rates while fishing; +3% drop chance on Pokemon you fish up,angler-09 angler-18,93.8,-19.7
+angler-15,Fished Exp,Angler,node,1,4,,+2% Pokemon exp from Pokemon you fish up,angler-10 angler-19,95.1,-8.2
+angler-16,Fishing Exp,Angler,node,1,5,,+3% fishing exp,angler-12 angler-20,100.3,-48.2
+angler-17,Quick Reflexes,Angler,node,1,5,,-6% bite wait (every rod but the AFK Rod),angler-13,104.9,-35.7
+angler-18,Fished Drops,Angler,node,1,5,,+2% drop chance on Pokemon you fish up,angler-14 angler-21,108.9,-22.6
+angler-19,Line Trainer,Angler,node,1,5,,+4% Pokemon exp from Pokemon you fish up,angler-15,110.2,-8.9
+angler-20,Fishing Exp,Angler,node,1,6,,+3% fishing exp,angler-16 angler-22,114.1,-54.1
+angler-21,Fished Drops,Angler,node,1,6,,+2% drop chance on Pokemon you fish up,angler-18 angler-23,123.3,-25.6
+angler-22,Fishing Exp,Angler,node,1,7,,+3% fishing exp,angler-20 angler-24,127.2,-60.7
+angler-23,Trawler,Angler,node,1,7,,+3% drop chance on Pokemon you fish up,angler-21,137.7,-28.2
+angler-24,Seasoned Angler,Angler,node,1,8,,+6% fishing exp,angler-22 angler-25,141.0,-67.2
+angler-25,Master Angler,Angler,node,1,9,,+3% fishing exp; -5% bite wait (every rod but the AFK Rod),angler-24 angler-26,154.8,-73.1
+angler-26,Patient Angler,Angler,keystone,3,12,30,-20% bite wait on the AFK Rod. +15% bite wait on every other rod.,angler-25,174.4,-82.0
+battler-01,Competitor,Battler,node,1,1,,2% chance for double Tower Tokens; 2% chance for double PvP Tokens from matches,battler-02 battler-03 battler-04 root,-47.7,-16.5
+battler-02,Double Tower Tokens,Battler,node,1,2,,3% chance for double Tower Tokens,battler-01 battler-05,-64.9,-7.2
+battler-03,Double PvP Tokens,Battler,node,1,2,,3% chance for double PvP Tokens from matches,battler-01 battler-06,-62.0,-21.6
+battler-04,World Boss Money,Battler,node,1,2,,+5% world boss money,battler-01 battler-07,-56.2,-34.2
+battler-05,Double Tower Tokens,Battler,node,1,3,,3% chance for double Tower Tokens,battler-02 battler-06 battler-08,-79.8,-7.9
+battler-06,Double PvP Tokens,Battler,node,1,3,,3% chance for double PvP Tokens from matches,battler-03 battler-05 battler-09,-76.1,-25.7
+battler-07,World Boss Money,Battler,node,1,3,,+5% world boss money,battler-04 battler-10,-68.9,-42.6
+battler-08,Double Tower Tokens,Battler,node,1,4,,3% chance for double Tower Tokens,battler-05 battler-12,-94.9,-7.9
+battler-09,Double PvP Tokens,Battler,node,1,4,,3% chance for double PvP Tokens from matches,battler-06 battler-11,-90.5,-30.5
+battler-10,Raider,Battler,node,1,4,,+10% world boss money; 10% chance of an extra world boss loot roll,battler-07,-80.7,-51.1
+battler-11,Double PvP Tokens,Battler,node,1,5,,3% chance for double PvP Tokens from matches,battler-09 battler-13,-104.9,-35.2
+battler-12,Tower Climber,Battler,node,2,6,,4% chance for double Tower Tokens,battler-08 battler-14 battler-15,-110.0,-8.5
+battler-13,Arena Ace,Battler,node,1,6,,6% chance for double PvP Tokens from matches,battler-11 battler-16,-119.3,-40.0
+battler-14,Iron Will,Battler,keystone,3,9,30,+30% chance for double Tower Tokens. Losing a run started with Iron Will sends you back to floor 0 instead of floor 100.,battler-12,-132.8,-9.8
+battler-15,Underdogs,Battler,keystone,3,9,30,+20% chance for double Tower Tokens on floors you clear with no legendary or mythical Pokemon in your team. Ultra Beasts are fine.,battler-12,-129.5,-31.8
+battler-16,Duelist,Battler,keystone,3,9,30,+50% chance for double PvP Tokens from wins. Losses pay no PvP Tokens.,battler-13,-139.1,-45.2
+breeder-01,Caretaker,Breeder,node,1,1,,3% chance to keep an IV Powder or Everstone when breeding,breeder-02 breeder-03 root,-29.4,39.2
+breeder-02,Keep Breeding Items,Breeder,node,1,2,,3% chance to keep an IV Powder or Everstone when breeding,breeder-01 breeder-04,-25.9,58.3
+breeder-03,Picnic,Breeder,skill,1,2,,Heals your party and gives +20% drop chance for 10 minutes. Cooldown 1 h.,breeder-01 breeder-05,-48.7,41.9
+breeder-04,Keep Breeding Items,Breeder,node,1,3,,3% chance to keep an IV Powder or Everstone when breeding,breeder-02 breeder-07,-30.7,72.6
+breeder-05,Picnic Cooldown,Breeder,node,1,3,,-10% Picnic cooldown,breeder-03 breeder-06,-60.8,51.1
+breeder-06,First Aid,Breeder,node,1,4,,-25% Picnic cooldown,breeder-05 breeder-08,-72.8,59.7
+breeder-07,Pedigree,Breeder,node,2,5,,10% chance per bred IV to roll twice and keep the higher,breeder-04 breeder-09,-35.5,86.6
+breeder-08,Picnic Party,Breeder,node,1,5,30,"When you use Picnic, party members on your map who fought a wild Pokemon in the last 2 minutes get it too (the heal only if they aren't in a battle). It starts their own Picnic cooldown and skips anyone whose cooldown is running.",breeder-06,-83.9,68.9
+breeder-09,Keep Breeding Items,Breeder,node,1,6,,3% chance to keep an IV Powder or Everstone when breeding,breeder-07 breeder-10,-41.3,100.5
+breeder-10,Keep Breeding Items,Breeder,node,1,7,,3% chance to keep an IV Powder or Everstone when breeding,breeder-09 breeder-11,-46.8,114.8
+breeder-11,Heirloom,Breeder,node,2,9,,5% chance to keep an IV Powder or Everstone when breeding; 5% chance per bred IV to roll twice and keep the higher,breeder-10 breeder-12,-52.5,128.5
+breeder-12,Pedigree,Breeder,node,1,10,,5% chance per bred IV to roll twice and keep the higher,breeder-11,-58.4,142.3
+collector-01,Ball Handler,Collector,node,1,1,,+5% catch rate,collector-02 collector-03 collector-04 collector-05 collector-06 root,29.8,-41.6
+collector-02,Quick Exit,Collector,node,1,2,,"Running from a wild Pokemon always works, unless you're trapped or on a map where you can't run.",collector-01 collector-07,28.5,-65.7
+collector-03,Habitat Drops,Collector,node,1,2,,+3% drop chance on maps where you've caught every Pokemon that spawns there; +3% money from wild battles on maps where you've caught every Pokemon that spawns there,collector-01 collector-08,32.5,-57.9
+collector-04,Steady Hand,Collector,node,1,2,,"+25% catch rate on Extremely Rare, elite and legendary Pokemon",collector-01 collector-13,41.6,-58.5
+collector-05,Synchronize,Collector,node,1,2,,"Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",collector-01 collector-09,44.1,-49.3
+collector-06,Hidden Ability,Collector,node,1,2,,Adds 1% to the hidden ability chance of wild Pokemon (30% base),collector-01 collector-10,48.9,-44.3
+collector-07,IV Floor,Collector,node,1,3,,+1 to the lowest IV a Pokemon you catch can have,collector-02 collector-11,33.1,-80.2
+collector-08,Habitat Drops,Collector,node,1,3,,+3% drop chance on maps where you've caught every Pokemon that spawns there; +3% money from wild battles on maps where you've caught every Pokemon that spawns there,collector-03 collector-12,39.2,-71.0
+collector-09,Synchronize,Collector,node,1,3,,"Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",collector-05 collector-10 collector-14,54.8,-60.2
+collector-10,Hidden Ability,Collector,node,1,3,,Adds 1% to the hidden ability chance of wild Pokemon (30% base),collector-06 collector-09 collector-15,61.3,-53.6
+collector-11,Good Stock,Collector,node,1,4,,+1 to the lowest IV a Pokemon you catch can have,collector-07 collector-19,37.7,-94.3
+collector-12,Habitat Drops,Collector,node,1,4,,+3% drop chance on maps where you've caught every Pokemon that spawns there; +3% money from wild battles on maps where you've caught every Pokemon that spawns there,collector-08 collector-16,46.4,-84.6
+collector-13,Catch Combo,Collector,keystone,2,4,30,"Each catch of the same species adds 1 to a combo, and knocking one out or running from one takes 1 off. +10% shiny chance on that species for every 5 in the combo, up to 2x at 50. Catching a different species starts a new combo.",collector-04,53.4,-78.0
+collector-14,Synchronize,Collector,node,1,4,,"Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",collector-09 collector-17,64.9,-70.8
+collector-15,Hidden Ability,Collector,node,1,4,,Adds 1% to the hidden ability chance of wild Pokemon (30% base),collector-10 collector-18,73.1,-62.5
+collector-16,Habitat Drops,Collector,node,1,5,,+3% drop chance on maps where you've caught every Pokemon that spawns there; +3% money from wild battles on maps where you've caught every Pokemon that spawns there,collector-12 collector-20,53.4,-97.4
+collector-17,Synchronize,Collector,node,1,5,,"Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",collector-14 collector-21,75.2,-82.0
+collector-18,Hidden Ability,Collector,node,1,5,,Adds 1% to the hidden ability chance of wild Pokemon (30% base),collector-15 collector-22,84.6,-72.0
+collector-19,Collector's Creed,Collector,keystone,2,6,30,+150 trainer exp per catch. -20% Pokemon exp and money from wild battles.,collector-11,45.9,-116.1
+collector-20,First Catch,Collector,node,1,6,,"Trainer exp the first time you catch each species in the wild: 250 for a Common, 500 for an Uncommon, 1,000 for a Rare, 2,000 for a Very Rare, 3,000 for an Extremely Rare or legendary.",collector-16 collector-23,60.7,-110.5
+collector-21,Nature Sense,Collector,node,1,6,,"Adds 2% to the Synchronize chance (26% base, 63% on legendary Pokemon)",collector-17,85.6,-92.6
+collector-22,Hidden Potential,Collector,node,1,6,,Adds 1% to the hidden ability chance of wild Pokemon (30% base),collector-18,96.4,-81.6
+collector-23,Field Notes,Collector,node,2,8,,"When a Rare, Very Rare or Extremely Rare Pokemon appears, you get one you haven't caught yet if that rarity on the map has one.",collector-20 collector-24,67.9,-123.6
+collector-24,Region Mastery,Collector,node,2,10,,"+5% encounter rates in a region once you've caught every Pokemon that spawns there, Commons to Extremely Rares. Legendary encounters don't count, and neither do boss floors, Deep maps, the Faraway Islands, Ancient Dungeon or Altering Cave (no bonus there either). [shows per-region dex progress]",collector-23 collector-25,75.7,-137.0
+collector-25,Encore,Collector,skill,2,12,,"For 30 minutes, the species you last battled replaces the other Pokemon of its rarity wherever it spawns. Rare, Very Rare and Extremely Rare Pokemon only, not legendary ones. Cooldown 4 h.",collector-24,82.3,-150.2
+explorer-01,Traveler,Explorer,node,1,1,,-10% ferry fares,explorer-02 explorer-03 explorer-04 root,0.2,48.7
+explorer-02,Safari Encounter Rates,Explorer,node,1,2,,+3% encounter rates in Safari Zones,explorer-01 explorer-05,14.6,62.1
+explorer-03,Ferry Fares,Explorer,node,1,2,,-10% ferry fares,explorer-01 explorer-06,0.2,63.4
+explorer-04,Regroup,Explorer,skill,1,2,,"Teleport to a party member. You need to have been there or have as many badges as they do, plus any ticket or key item the way in asks for. You can't reach someone who is surfing without Surf, and Regroup never goes into Elite Four rooms. Cooldown 30 min.",explorer-01 explorer-07,-14.2,62.2
+explorer-05,Safari Regular,Explorer,node,1,3,,+3% encounter rates in Safari Zones,explorer-02 explorer-08 explorer-14,18.5,76.6
+explorer-06,Sea Legs,Explorer,node,1,3,,-30% ferry fares,explorer-03 explorer-09,0.2,78.5
+explorer-07,Good Company,Explorer,node,1,3,,-50% Regroup cooldown,explorer-04 explorer-12,-18.3,76.6
+explorer-08,Dig,Explorer,skill,1,4,,Travel to a cave you've been in. Cooldown 1 h.,explorer-05 explorer-10,23.1,91.0
+explorer-09,Fly,Explorer,skill,1,4,,Fly to a Pokecenter you've visited. Cooldown 30 min.,explorer-06 explorer-11,0.2,93.6
+explorer-10,Dig Cooldown,Explorer,node,1,5,,-25% Dig cooldown,explorer-08 explorer-13,26.9,105.6
+explorer-11,Fly Cooldown,Explorer,node,1,5,,-10% Fly cooldown,explorer-09 explorer-15,0.0,108.5
+explorer-12,Pack Leader,Explorer,keystone,2,5,30,"+4% money from wild battles and drop chance for each party member on your map who fought a wild Pokemon in the last 2 minutes, up to +16%. 2x Party EXP for party members on your map (2% -> 4% per member) while you're fighting wild Pokemon there too. -10% money from wild battles while nobody else is in your party.",explorer-07,-24.3,96.9
+explorer-13,Burrow,Explorer,node,1,6,,-25% Dig cooldown,explorer-10 explorer-16,30.2,120.0
+explorer-14,Safari Ranger,Explorer,keystone,3,6,30,In Safari Zones: +12% encounter rates. Everywhere else: -5% encounter rates.,explorer-05,13.8,101.6
+explorer-15,Tailwind,Explorer,node,1,6,,-25% Fly cooldown,explorer-11 explorer-17 explorer-18,0.0,123.9
+explorer-16,Cave Dweller,Explorer,keystone,3,9,30,On the cave maps Dig reaches (except the Stark Mountain Chamber): +5% encounter rates and +6% drop chance. Everywhere else: -5% encounter rates.,explorer-13,38.0,143.0
+explorer-17,Nomad,Explorer,keystone,3,9,30,"-40% Fly, Dig and Regroup cooldowns. +10% Pokemart prices, service prices and ferry fares.",explorer-15,21.6,142.3
+explorer-18,Night Owl,Explorer,keystone,3,9,30,At night: +15% encounter rates and +10% shiny chance. Any other time: -2% encounter rates.,explorer-15,0,145
+fortune-01,Coin Purse,Fortune,node,1,1,,+1% money from wild battles,fortune-02 fortune-03 fortune-04 fortune-05 root,29.7,39.2
+fortune-02,Wild Money,Fortune,node,1,2,,+1% money from wild battles,fortune-01 fortune-06,48.7,41.6
+fortune-03,Pay Day,Fortune,skill,1,2,,+25% money from wild battles for 15 minutes. Cooldown 3 h.,fortune-01 fortune-07,42.1,48.4
+fortune-04,Drop Chance,Fortune,node,1,2,,+1% drop chance,fortune-01 fortune-08,34.6,54.1
+fortune-05,Pokemart Prices,Fortune,node,1,2,,-3% Pokemart prices,fortune-01 fortune-09,26.1,58.2
+fortune-06,Wild Money,Fortune,node,1,3,,+1% money from wild battles,fortune-02 fortune-07 fortune-10,60.7,51.0
+fortune-07,Big Spender,Fortune,node,1,3,,-33% Pay Day cooldown,fortune-03 fortune-06 fortune-08 fortune-11,52.1,59.5
+fortune-08,Drop Chance,Fortune,node,1,3,,+1% drop chance,fortune-04 fortune-07 fortune-12,42.1,66.7
+fortune-09,Haggler,Fortune,node,1,3,,-7% Pokemart prices; -10% gender change and storage box prices,fortune-05 fortune-13,31.0,72.6
+fortune-10,Wild Money,Fortune,node,1,4,,+1% money from wild battles,fortune-06 fortune-14,73.1,59.5
+fortune-11,Bonus Round,Fortune,node,1,4,,+5 minutes of Pay Day,fortune-07,62.1,70.7
+fortune-12,Drop Chance,Fortune,node,1,4,,+1% drop chance,fortune-08 fortune-15,49.3,79.8
+fortune-13,Broker,Fortune,node,1,4,,Cancelling a Marketplace listing refunds its listing fee.,fortune-09 fortune-18,35.6,86.7
+fortune-14,Wild Money,Fortune,node,1,5,,+1% money from wild battles,fortune-10 fortune-16,84.8,69.3
+fortune-15,Drop Chance,Fortune,node,1,5,,+1% drop chance,fortune-12 fortune-17,57.5,92.3
+fortune-16,Wild Money,Fortune,node,1,6,,+1% money from wild battles,fortune-14 fortune-19,96.1,79.0
+fortune-17,Drop Chance,Fortune,node,1,6,,+1% drop chance,fortune-15 fortune-20,64.9,105.6
+fortune-18,Frugal,Fortune,keystone,2,6,30,"-20% Pokemart prices, service prices and ferry fares. -10% money from wild and trainer battles.",fortune-13,45.9,109.5
+fortune-19,Wild Money,Fortune,node,1,7,,+1% money from wild battles,fortune-16 fortune-21,107.5,88.5
+fortune-20,Drop Chance,Fortune,node,1,7,,+1% drop chance,fortune-17 fortune-22,72.8,118.4
+fortune-21,Wild Money,Fortune,node,1,8,,+1% money from wild battles,fortune-19 fortune-23,118.7,98.4
+fortune-22,Drop Chance,Fortune,node,1,8,,+1% drop chance,fortune-20 fortune-24,80.7,131.1
+fortune-23,Wild Money,Fortune,node,1,9,,+1% money from wild battles,fortune-21 fortune-25,130.5,108.2
+fortune-24,Drop Chance,Fortune,node,1,9,,+1% drop chance,fortune-22 fortune-26,88.5,143.6
+fortune-25,Wild Money,Fortune,node,1,10,,+1% money from wild battles,fortune-23 fortune-27,142.3,117.4
+fortune-26,Drop Chance,Fortune,node,1,10,,+1% drop chance,fortune-24 fortune-28,96.4,156.7
+fortune-27,Wild Money,Fortune,node,1,11,,+1% money from wild battles,fortune-25 fortune-29,153.4,127.9
+fortune-28,Drop Chance,Fortune,node,1,11,,+1% drop chance,fortune-26 fortune-30,104.3,169.8
+fortune-29,Big Earner,Fortune,node,1,12,,+3% money from wild battles,fortune-27 fortune-31,165.2,137.0
+fortune-30,Lucky Find,Fortune,node,1,12,,+3% drop chance,fortune-28 fortune-32,112.1,182.3
+fortune-31,Windfall,Fortune,node,1,13,,+1% money from wild battles,fortune-29 fortune-33,176.4,146.2
+fortune-32,Hoarder,Fortune,node,1,13,,+2% drop chance,fortune-30 fortune-34,120.0,195.4
+fortune-33,Lone Wanderer,Fortune,keystone,2,15,30,While you're not in a party: +10% money from wild battles and +5% drop chance. You get no Party EXP bonus and no Hunter assist credit.,fortune-31,193,160
+fortune-34,Treasure Hunter,Fortune,keystone,2,15,30,+20% drop chance. -10% money from wild battles.,fortune-32,131,213
+hunter-01,Tracker,Hunter,node,1,1,,+3% hunting exp (multiplies with the Hunter exp perks),hunter-02 hunter-03 hunter-04 hunter-05 hunter-06 root,-29.3,-42.1
+hunter-02,Hunting Exp,Hunter,node,1,2,,+3% hunting exp (multiplies with the Hunter exp perks),hunter-01 hunter-07,-48.5,-44.0
+hunter-03,Hunter Tokens,Hunter,node,1,2,,+3% Hunter Tokens from contracts,hunter-01 hunter-08,-43.7,-49.3
+hunter-04,Contract Fees,Hunter,node,1,2,,-15% contract cancel and block costs,hunter-01 hunter-09,-42.4,-59.1
+hunter-05,Elite Chance,Hunter,node,1,2,,+4% elite chance,hunter-01 hunter-10,-32.2,-57.8
+hunter-06,Group Battles,Hunter,node,1,2,,+20% group battle chance with the Hunter's Horn perk,hunter-01 hunter-11,-26.0,-61.1
+hunter-07,Hunting Exp,Hunter,node,1,3,,+3% hunting exp (multiplies with the Hunter exp perks),hunter-02 hunter-08 hunter-12,-61.0,-53.8
+hunter-08,Hunter Tokens,Hunter,node,1,3,,+3% Hunter Tokens from contracts,hunter-03 hunter-07 hunter-13,-54.2,-60.0
+hunter-09,Negotiator,Hunter,node,1,3,,-35% contract cancel and block costs,hunter-04 hunter-13 hunter-15,-50.9,-71.6
+hunter-10,Elite Chance,Hunter,node,1,3,,+4% elite chance,hunter-05 hunter-14 hunter-16,-39.1,-71.0
+hunter-11,Group Battles,Hunter,node,1,3,,+20% group battle chance with the Hunter's Horn perk,hunter-06 hunter-17,-30.6,-74.9
+hunter-12,Hunting Exp,Hunter,node,1,4,,+3% hunting exp (multiplies with the Hunter exp perks),hunter-07 hunter-18,-73.0,-62.3
+hunter-13,Hunter Tokens,Hunter,node,1,4,,+3% Hunter Tokens from contracts,hunter-08 hunter-09 hunter-19,-64.6,-70.8
+hunter-14,Double Credit,Hunter,node,1,4,,"2% chance a kill or catch counts twice toward your Hunter contract, rolled separately from Hunter's Tally",hunter-10 hunter-15 hunter-20,-71.5,-99.0
+hunter-15,Second Wind,Hunter,node,1,4,,"Once a day, abandoning a contract keeps your streak.",hunter-09 hunter-14,-62.3,-87.2
+hunter-16,Elite Chance,Hunter,node,1,4,,+4% elite chance,hunter-10 hunter-21,-46.3,-84.0
+hunter-17,Group Battles,Hunter,node,1,4,,+20% group battle chance with the Hunter's Horn perk,hunter-11 hunter-22,-35.6,-89.3
+hunter-18,Hunting Exp,Hunter,node,1,5,,+3% hunting exp (multiplies with the Hunter exp perks),hunter-12 hunter-23,-84.6,-72.0
+hunter-19,Bounty Broker,Hunter,node,1,5,,"+3% Hunter Tokens from contracts; +50% bounty chance (5% -> 7.5% of contracts, Grandmaster Vex 10% -> 15%)",hunter-13 hunter-25,-75.4,-81.3
+hunter-20,Quick Tally,Hunter,node,1,5,,"4% chance a kill or catch counts twice toward your Hunter contract, rolled separately from Hunter's Tally",hunter-14,-80.0,-111.5
+hunter-21,Elite Chance,Hunter,node,1,5,,+4% elite chance,hunter-16 hunter-26,-53.1,-97.3
+hunter-22,Pack Tracker,Hunter,node,1,5,,+40% group battle chance with the Hunter's Horn perk,hunter-17 hunter-28,-41.1,-103.0
+hunter-23,Hunting Exp,Hunter,node,1,6,,+3% hunting exp (multiplies with the Hunter exp perks),hunter-18 hunter-24,-95.7,-82.0
+hunter-24,Hunting Exp,Hunter,node,1,7,,+3% hunting exp (multiplies with the Hunter exp perks),hunter-23 hunter-27,-107.5,-91.1
+hunter-25,Mark Target,Hunter,skill,2,7,,Kills and catches count twice toward your Hunter contract for 10 minutes. Cooldown 2 h.,hunter-19,-85.2,-92.5
+hunter-26,Elite Tracker,Hunter,node,2,7,,+9% elite chance,hunter-21 hunter-30,-61.0,-110.8
+hunter-27,Field Guide,Hunter,node,1,8,,+6% hunting exp (multiplies with the Hunter exp perks),hunter-24 hunter-29,-118.7,-101.0
+hunter-28,Horde Caller,Hunter,keystone,3,8,30,"With the Hunter's Horn perk, every group battle is a horde of 5. -50% group battle chance (1.4% -> 0.7% of encounters).",hunter-22,-49,-123
+hunter-29,Master Hunter,Hunter,node,1,9,,+3% hunting exp (multiplies with the Hunter exp perks); +3% Hunter Tokens from contracts,hunter-27,-130.5,-110.5
+hunter-30,Token Collector,Hunter,node,3,10,,Elite Token share of elite drops 20% -> 24%,hunter-26 hunter-31,-68.2,-123.9
+hunter-31,Wear Down,Hunter,node,1,11,,"Elite HP 6x -> 5x (on maps with a stat boost, 1x less than usual)",hunter-30 hunter-32,-75.4,-137.0
+hunter-32,Elite Slayer,Hunter,keystone,2,13,30,+15% elite chance (1 in 200 -> 1 in 174) and +20% Pokemon exp and money from elites. -10% money and drop chance from other wild Pokemon.,hunter-31,-87.2,-159.3
+prospector-01,Rock Hound,Prospector,node,1,1,,+3% mining exp,prospector-02 prospector-03 prospector-04 root,47.5,14.1
+prospector-02,Mining Exp,Prospector,node,1,2,,+3% mining exp,prospector-01 prospector-05,65.2,4.9
+prospector-03,Swing Speed,Prospector,node,1,2,,-4% time between mining swings,prospector-01 prospector-06,62.1,18.9
+prospector-04,Double Gems,Prospector,node,1,2,,Adds 2% to your pickaxe's double gem chance,prospector-01 prospector-07,56.1,32.0
+prospector-05,Mining Exp,Prospector,node,1,3,,+3% mining exp,prospector-02 prospector-06 prospector-08,80.0,4.9
+prospector-06,Swing Speed,Prospector,node,1,3,,-4% time between mining swings,prospector-03 prospector-05 prospector-09,76.2,23.1
+prospector-07,Double Gems,Prospector,node,1,3,,Adds 2% to your pickaxe's double gem chance,prospector-04 prospector-09 prospector-10,68.7,39.8
+prospector-08,Mining Exp,Prospector,node,1,4,,+3% mining exp,prospector-05 prospector-11,95.1,4.6
+prospector-09,Swing Speed,Prospector,node,1,4,,-4% time between mining swings,prospector-06 prospector-07 prospector-12,90.8,27.9
+prospector-10,Cluster,Prospector,node,1,4,,Adds 2% to your pickaxe's double gem chance,prospector-07 prospector-15,80.8,49.0
+prospector-11,Mining Exp,Prospector,node,1,5,,+3% mining exp,prospector-08 prospector-13,110.2,5.9
+prospector-12,Pickaxe Power,Prospector,node,1,5,,Adds 1% to each swing's chance to break the rock,prospector-09 prospector-14,104.9,32.5
+prospector-13,Mining Exp,Prospector,node,1,6,,+3% mining exp,prospector-11 prospector-16,125.2,6.6
+prospector-14,Pickaxe Power,Prospector,node,1,6,,Adds 1% to each swing's chance to break the rock,prospector-12 prospector-17,119.3,37.0
+prospector-15,Appraiser,Prospector,node,2,6,,+4% gem sell price,prospector-10 prospector-18,93.8,56.7
+prospector-16,Mining Exp,Prospector,node,1,7,,+3% mining exp,prospector-13 prospector-21,140.3,7.9
+prospector-17,Heavy Swing,Prospector,node,1,7,,Adds 1% to each swing's chance to break the rock,prospector-14 prospector-19,133.8,41.6
+prospector-18,Rich Vein,Prospector,skill,1,7,,2x gems on your next 5 gem drops from mining. Rainbow Gemstones don't count. Cooldown 30 min.,prospector-15 prospector-20,106.6,64.6
+prospector-19,Fossil Find,Prospector,node,1,8,,"Every rock you break has a 1% chance to also give a fossil shard. Dark, Lava and Rainbow Rocks can give any shard, other rocks Helix, Dome or Amber.",prospector-17,147.9,46.2
+prospector-20,Prospect,Prospector,node,1,8,,-33% Rich Vein cooldown,prospector-18 prospector-23,119.3,72.5
+prospector-21,Seasoned Miner,Prospector,node,2,9,,+6% mining exp,prospector-16 prospector-22,155.4,9.2
+prospector-22,Master Miner,Prospector,node,1,10,,+3% mining exp; -3% time between mining swings,prospector-21 prospector-24,174.4,10.5
+prospector-23,Deep Core,Prospector,keystone,3,11,30,"Adds 5% to your pickaxe's double gem chance. Rocks never start a wild battle, so gems drop on 98% of breaks instead of 87%. -8% gem sell price.",prospector-20,134.8,85.2
+prospector-24,Seismic Sense,Prospector,keystone,3,13,30,"Wild battles from rocks 11% -> 22% of breaks, and those battles pay +50% mining exp. Gems 87% -> 76% of breaks.",prospector-22,195,12
+seeker-01,Wild Instincts,Seeker,node,1,1,,+1% encounter rates; +1% shiny chance on wild Pokemon,root seeker-02 seeker-03 seeker-04 seeker-05,0.3,-51.3
+seeker-02,Double Legendary Tokens,Seeker,node,1,2,,3% chance for double legendary tokens,seeker-01 seeker-06,-14.1,-64.6
+seeker-03,Encounter Rates,Seeker,node,1,2,,+1% encounter rates,seeker-01 seeker-07,-4.6,-66.4
+seeker-04,Shiny Chance,Seeker,node,1,2,,+1.2% shiny chance on wild Pokemon,seeker-01 seeker-08,4.9,-66.2
+seeker-05,Longer Lures,Seeker,node,1,2,,+5 minutes on Honey and Shiny Lures you place,seeker-01 seeker-09,14.1,-65.1
+seeker-06,Double Legendary Tokens,Seeker,node,1,3,,3% chance for double legendary tokens,seeker-02 seeker-07 seeker-10,-18.1,-79.5
+seeker-07,Encounter Rates,Seeker,node,1,3,,+1% encounter rates,seeker-03 seeker-06 seeker-11,-6.2,-81.5
+seeker-08,Shiny Chance,Seeker,node,1,3,,+1.2% shiny chance on wild Pokemon,seeker-04 seeker-12,6.2,-80.8
+seeker-09,Longer Lures,Seeker,node,1,3,,+5 minutes on Honey and Shiny Lures you place,seeker-05 seeker-13,18.7,-79.5
+seeker-10,Double Legendary Tokens,Seeker,node,1,4,,3% chance for double legendary tokens,seeker-06 seeker-14,-22.7,-93.3
+seeker-11,Encounter Rates,Seeker,node,1,4,,+1% encounter rates,seeker-07 seeker-12 seeker-15,-7.5,-95.7
+seeker-12,Shiny Chance,Seeker,node,1,4,,+1.2% shiny chance on wild Pokemon,seeker-08 seeker-11 seeker-16,8.2,-96.1
+seeker-13,Beekeeper,Seeker,node,1,4,,+5 minutes on Honey and Shiny Lures you place,seeker-09,23.3,-93.3
+seeker-14,Double Legendary Tokens,Seeker,node,1,5,,3% chance for double legendary tokens,seeker-10 seeker-17,-26.7,-107.5
+seeker-15,Encounter Rates,Seeker,node,1,5,,+1% encounter rates,seeker-11 seeker-18,-8.9,-110.8
+seeker-16,Shiny Chance,Seeker,node,1,5,,+1.2% shiny chance on wild Pokemon,seeker-12 seeker-19,8.9,-110.8
+seeker-17,Double Legendary Tokens,Seeker,node,1,6,,3% chance for double legendary tokens,seeker-14 seeker-21,-30.2,-122.6
+seeker-18,Encounter Rates,Seeker,node,1,6,,+1% encounter rates,seeker-15 seeker-22,-10.2,-125.9
+seeker-19,Shiny Chance,Seeker,node,1,6,,+1.2% shiny chance on wild Pokemon,seeker-16 seeker-20,10.2,-125.9
+seeker-20,Shiny Chance,Seeker,node,1,7,,+1.2% shiny chance on wild Pokemon,seeker-19 seeker-23,11.5,-140.7
+seeker-21,Pilgrim,Seeker,node,2,8,,10% chance for double legendary tokens,seeker-17 seeker-24,-33.9,-137.0
+seeker-22,Keen Eye,Seeker,node,2,8,,+2% encounter rates,seeker-18 seeker-25 seeker-26,-11.4,-141.0
+seeker-23,Glimmer,Seeker,node,2,9,,+2.5% shiny chance on wild Pokemon,seeker-20 seeker-27,12.8,-155.4
+seeker-24,Double Legendary Tokens,Seeker,node,2,10,,3% chance for double legendary tokens,seeker-21 seeker-28,-37.4,-151.5
+seeker-25,Encounter Rates,Seeker,node,2,10,,+1% encounter rates,seeker-22 seeker-29,-12.2,-155.4
+seeker-26,Sweet Scent,Seeker,skill,3,11,,+15% encounter rates for 10 minutes. Cooldown 1 h.,seeker-22 seeker-30,0.3,-160.0
+seeker-27,Shiny Chance,Seeker,node,2,11,,+1.2% shiny chance on wild Pokemon,seeker-23 seeker-31,14.1,-170.8
+seeker-28,Double Legendary Tokens,Seeker,node,2,12,,3% chance for double legendary tokens,seeker-24 seeker-32,-41.1,-166.1
+seeker-29,Encounter Rates,Seeker,node,2,12,,+1% encounter rates,seeker-25 seeker-33,-13.6,-170.5
+seeker-30,Lingering Scent,Seeker,node,2,13,,+5 minutes of Sweet Scent,seeker-26 seeker-34,0.3,-173.8
+seeker-31,Shiny Chance,Seeker,node,2,13,,+1.2% shiny chance on wild Pokemon,seeker-27 seeker-35,15.4,-185.6
+seeker-32,Double Legendary Tokens,Seeker,node,2,14,,3% chance for double legendary tokens,seeker-28 seeker-36,-45.0,-181.0
+seeker-33,Encounter Rates,Seeker,node,2,14,,+1% encounter rates,seeker-29 seeker-37,-14.9,-185.6
+seeker-34,Scent Trail,Seeker,node,2,15,,-25% Sweet Scent cooldown,seeker-30 seeker-38,0.3,-187.5
+seeker-35,Shiny Chance,Seeker,node,2,15,,+1.2% shiny chance on wild Pokemon,seeker-31 seeker-39,16,-201
+seeker-36,Double Legendary Tokens,Seeker,node,2,16,,3% chance for double legendary tokens,seeker-32 seeker-40,-48.3,-195.4
+seeker-37,Encounter Rates,Seeker,node,2,16,,+1% encounter rates,seeker-33 seeker-41,-16,-201
+seeker-38,Shared Scent,Seeker,node,1,16,30,"When you use Sweet Scent, party members on your map who fought a wild Pokemon in the last 2 minutes get it too. It starts their own Sweet Scent cooldown and skips anyone whose cooldown is running.",seeker-34,0,-201
+seeker-39,Shiny Chance,Seeker,node,2,17,,+1.2% shiny chance on wild Pokemon,seeker-35 seeker-42,17,-216
+seeker-40,Double Legendary Tokens,Seeker,node,2,18,,3% chance for double legendary tokens,seeker-36 seeker-43,-52,-211
+seeker-41,Encounter Rates,Seeker,node,2,18,,+1% encounter rates,seeker-37 seeker-44,-17,-216
+seeker-42,Shiny Chance,Seeker,node,2,19,,+1.2% shiny chance on wild Pokemon,seeker-39 seeker-45,19,-231
+seeker-43,Ancient Call,Seeker,node,2,20,,10% chance for double legendary tokens,seeker-40 seeker-47,-56,-225
+seeker-44,Rare Finds,Seeker,node,2,20,,+2% encounter rates,seeker-41 seeker-46,-19,-231
+seeker-45,Shiny Chance,Seeker,node,2,21,,+1.2% shiny chance on wild Pokemon,seeker-42 seeker-48,20,-246
+seeker-46,Rare Hunter,Seeker,keystone,2,22,30,+6% encounter rates. -15% shiny chance.,seeker-44,-21,-252
+seeker-47,Pilgrim's Vow,Seeker,keystone,3,23,30,+25% chance for double legendary tokens. -15% shiny chance.,seeker-43,-61,-246
+seeker-48,Shining Path,Seeker,node,2,23,,+2.1% shiny chance on wild Pokemon,seeker-45 seeker-49 seeker-50,21,-260
+seeker-49,Shiny Obsession,Seeker,keystone,2,25,30,+10% shiny chance on wild Pokemon. -20% encounter rates.,seeker-48,23,-281
+seeker-50,Shiny Bond,Seeker,node,5,28,50,Synchronize always works on shiny Pokemon.,seeker-48,47,-271
+trainer-01,Battle Ready,Trainer,node,1,1,,+2% Pokemon exp,root trainer-02 trainer-03 trainer-04 trainer-05,-47.7,14.2
+trainer-02,Pokemon Exp,Trainer,node,1,2,,+1.5% Pokemon exp,trainer-01 trainer-06,-55.8,31.7
+trainer-03,Power Training,Trainer,node,1,2,,"+1 to every EV a wild Pokemon you knock out gives, before a Macho Brace or Gold Effort Brace doubles it.",trainer-01 trainer-07,-60.3,23.3
+trainer-04,Trainer Battle Exp,Trainer,node,1,2,,+3% Pokemon exp from trainer battles,trainer-01 trainer-05 trainer-08,-61.6,14.4
+trainer-05,Rematch Prizes,Trainer,node,1,2,,+20% money and Pokemon exp from gym leaders and the Elite Four,trainer-01 trainer-04 trainer-11,-64.9,4.9
+trainer-06,Pokemon Exp,Trainer,node,1,3,,+1.5% Pokemon exp,trainer-02 trainer-07 trainer-09,-68.5,40.2
+trainer-07,Exp Share,Trainer,node,1,3,,"Adds 2% to the part of a battle's exp your Exp Share holders get (50% base, 75% with Exp Share (Enhanced))",trainer-03 trainer-06 trainer-10,-74.1,29.5
+trainer-08,Trainer Battle Exp,Trainer,node,1,3,,+3% Pokemon exp from trainer battles,trainer-04 trainer-14,-78.0,17.7
+trainer-09,Pokemon Exp,Trainer,node,1,4,,+1.5% Pokemon exp,trainer-06 trainer-12,-80.7,49.2
+trainer-10,Exp Share,Trainer,node,1,4,,"Adds 2% to the part of a battle's exp your Exp Share holders get (50% base, 75% with Exp Share (Enhanced))",trainer-07 trainer-13,-87.9,35.4
+trainer-11,Gym Regular,Trainer,node,2,4,,+30% money and Pokemon exp from gym leaders and the Elite Four; -20% gym leader and Elite Four rematch time,trainer-05 trainer-18,-80.0,5.2
+trainer-12,Pokemon Exp,Trainer,node,1,5,,+1.5% Pokemon exp,trainer-09 trainer-15,-93.6,57.0
+trainer-13,Mentor,Trainer,node,1,5,,"Adds 2% to the part of a battle's exp your Exp Share holders get (50% base, 75% with Exp Share (Enhanced))",trainer-10 trainer-16,-101.6,41.3
+trainer-14,Coach,Trainer,node,2,5,,+4% Pokemon exp from trainer battles; +10% money from trainer battles,trainer-08 trainer-17,-92.5,21.0
+trainer-15,Pokemon Exp,Trainer,node,1,6,,+1.5% Pokemon exp,trainer-12 trainer-19,-106.2,64.9
+trainer-16,Tutor,Trainer,node,1,6,30,"Party members on your map below trainer level 50, and below yours, get +25% trainer exp from wild battles while you're fighting wild Pokemon there too.",trainer-13,-115,47
+trainer-17,Trainer Money,Trainer,node,1,6,,+5% money from trainer battles,trainer-14 trainer-20,-107.2,24.3
+trainer-18,Rematch Call,Trainer,skill,2,6,,"For 20 minutes, gym leaders and the Elite Four have no rematch wait and pay +50% money and Pokemon exp. Cooldown 2 h.",trainer-11 trainer-21,-99.0,5.9
+trainer-19,Pokemon Exp,Trainer,node,1,7,,+1.5% Pokemon exp,trainer-15 trainer-22,-118.7,72.8
+trainer-20,Prize Purse,Trainer,node,1,7,,+5% money from trainer battles,trainer-17,-121.8,27.5
+trainer-21,Challenger,Trainer,node,1,7,,-25% Rematch Call cooldown,trainer-18,-118.0,7.2
+trainer-22,Fast Learner,Trainer,node,1,8,,+3% Pokemon exp,trainer-19 trainer-23,-131.8,80.7
+trainer-23,Prodigy,Trainer,node,1,9,,+1% Pokemon exp,trainer-22 trainer-24,-144.3,89.2
+trainer-24,Monotype Specialist,Trainer,keystone,3,12,30,If every Pokemon in your party shares a type: +10% Pokemon exp from every battle and +15% money from trainer battles. Otherwise -10% Pokemon exp.,trainer-23,-161.3,101.0
