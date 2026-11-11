@@ -28,9 +28,18 @@ Every node lists its name, branch, type (normal node, keystone or trainer skill)
 
 There are 22 keystones (all need trainer level 30) and 11 trainer skills. Shiny Bond (Seeker) is the one node gated at level 50. Taking every node costs 342 points.
 
+## Bonus caps
+
+Each bonus has a hard cap, stored in `stats[]` in `skilltree.json`. 41 caps were confirmed in game, and every one equals exactly what the regular nodes for that bonus add up to. So a full set of regular nodes always reaches the cap, and the only way past it is a keystone (Shiny Obsession, Pilgrim's Vow, Treasure Hunter, Iron Will, Frugal, Nomad, Elite Slayer, Deep Core, Safari Ranger and others). The planner adds a keystone's unconditional bonuses and penalties to the same totals, caps the result, and shows anything over the cap as wasted. Conditional keystone effects (night only, Safari only, solo play and so on) are listed as text and not counted. The 18 bonuses with no confirmed cap use the sum of their nodes and are marked with \* in the planner.
+
 ## Known gaps
 
 - **Points per level.** The game showed 1 point at trainer level 1. The planner assumes 1 point per level and lets you override it.
 - **Keystone rules.** Nothing in the tooltips says whether keystones exclude each other. The planner doesn't restrict them.
+- **Penalty order.** It isn't confirmed whether a keystone penalty applies before or after the cap. The planner applies the cap to the combined total. For example, all shiny nodes plus Rare Hunter shows 15%, not 20%.
 - **Hidden path costs.** Gated nodes hide their path cost in game, so those values are computed from the graph.
 - **Beta data.** Values were read on 2026-11-10 and will change between beta patches.
+
+## How it was captured
+
+The node data was read off the in-game tooltips in the web beta, with no access to the game's files. The connections were detected from the lines the game draws between nodes and then validated against the in-game path costs. The client's data bundle is encrypted, so it wasn't used.
