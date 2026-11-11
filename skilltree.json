@@ -9,7 +9,8 @@
    "x/y are layout coordinates relative to the start node (screen units at default zoom, y down)",
    "edges are undirected; 13 short cross-links (\"rungs\") join neighbouring lanes inside a branch",
    "stats[].max is the cap for each bonus; capSource says whether it was confirmed in game or is just the sum of every node for that bonus",
-   "Keystone stats (keystone:true) are counted toward the same capped totals; whether a keystone penalty applies before or after the cap still needs checking in game"
+   "Keystone stats (keystone:true) are counted toward the same capped totals; whether a keystone penalty applies before or after the cap still needs checking in game",
+   "exclusiveGroups: only one keystone from each group can be held at a time (confirmed in game)"
   ]
  },
  "root": {
@@ -6208,5 +6209,34 @@
    "max": 20.0,
    "capSource": "confirmed in game"
   }
+ ],
+ "exclusiveGroups": [
+  [
+   "fortune-34",
+   "fortune-33",
+   "explorer-12"
+  ],
+  [
+   "prospector-23",
+   "prospector-24"
+  ],
+  [
+   "collector-19",
+   "collector-13"
+  ],
+  [
+   "explorer-16",
+   "explorer-18",
+   "explorer-14"
+  ],
+  [
+   "battler-14",
+   "battler-15"
+  ],
+  [
+   "seeker-47",
+   "seeker-46",
+   "seeker-49"
+  ]
  ]
 }
