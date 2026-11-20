@@ -9,8 +9,8 @@
    "x/y are layout coordinates relative to the start node (screen units at default zoom, y down)",
    "edges are undirected; 13 short cross-links (\"rungs\") join neighbouring lanes inside a branch",
    "stats[].max is the cap for each bonus; capSource says whether it was confirmed in game or is just the sum of every node for that bonus",
-   "Keystone stats (keystone:true) are counted toward the same capped totals; whether a keystone penalty applies before or after the cap still needs checking in game",
-   "exclusiveGroups: only one keystone from each group can be held at a time (confirmed in game)"
+   "exclusiveGroups: only one keystone from each group can be held at a time (confirmed in game)",
+   "Caps (stats[].max) limit regular nodes only. Keystone stats (keystone:true) are added after the cap and can take a bonus past its max (confirmed in game)"
   ]
  },
  "root": {
