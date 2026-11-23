@@ -32,7 +32,7 @@ There are 22 keystones (all need trainer level 30) and 11 trainer skills. Shiny 
 
 Each bonus has a hard cap, stored in `stats[]` in `skilltree.json`. 41 caps were confirmed in game, and every one equals exactly what the regular nodes for that bonus add up to.
 
-The caps only limit regular nodes. Keystone bonuses and penalties are added after the cap, so a keystone can take a bonus past its max (confirmed in game). For example, all shiny nodes give 20%, and Shiny Obsession adds +10% on top for 30%. Penalties also apply after the cap: all encounter-rate nodes give 15%, and Shiny Obsession's -20% brings that to -5%. The planner shows the keystone part of each total separately. Conditional keystone effects (night only, Safari only, solo play and so on) are listed as text and not counted. The 18 bonuses with no confirmed cap use the sum of their nodes and are marked with \* in the planner.
+The caps only limit regular nodes. Keystone bonuses and penalties are added after the cap, so a keystone can take a bonus past its max (confirmed in game). For example, all shiny nodes give 20%, and Shiny Obsession adds +10% on top for 30%. Penalties also apply after the cap: all encounter-rate nodes give 15%, and Shiny Obsession's -20% brings that to -5%. The planner shows the keystone part of each total separately. Lone Wanderer's bonuses only apply when you're not in a party, so any bonus it touches shows two values: in a party and not in a party. Other conditional keystone effects (night only, Safari only and so on) are listed as text and not counted. The 18 bonuses with no confirmed cap use the sum of their nodes and are marked with \* in the planner.
 
 ## Mutually exclusive keystones
 

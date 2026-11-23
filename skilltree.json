@@ -10,7 +10,8 @@
    "edges are undirected; 13 short cross-links (\"rungs\") join neighbouring lanes inside a branch",
    "stats[].max is the cap for each bonus; capSource says whether it was confirmed in game or is just the sum of every node for that bonus",
    "exclusiveGroups: only one keystone from each group can be held at a time (confirmed in game)",
-   "Caps (stats[].max) limit regular nodes only. Keystone stats (keystone:true) are added after the cap and can take a bonus past its max (confirmed in game)"
+   "Caps (stats[].max) limit regular nodes only. Keystone stats (keystone:true) are added after the cap and can take a bonus past its max (confirmed in game)",
+   "Stats with condition:\"solo\" only apply while not in a party; the planner shows those totals separately"
   ]
  },
  "root": {
@@ -2343,7 +2344,20 @@
    "x": 193,
    "y": 160,
    "id": "fortune-33",
-   "stats": []
+   "stats": [
+    {
+     "key": "money-from-wild-battles",
+     "value": 10,
+     "keystone": true,
+     "condition": "solo"
+    },
+    {
+     "key": "drop-chance",
+     "value": 5,
+     "keystone": true,
+     "condition": "solo"
+    }
+   ]
   },
   {
    "name": "Treasure Hunter",
