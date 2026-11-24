@@ -11,7 +11,8 @@
    "stats[].max is the cap for each bonus; capSource says whether it was confirmed in game or is just the sum of every node for that bonus",
    "exclusiveGroups: only one keystone from each group can be held at a time (confirmed in game)",
    "Caps (stats[].max) limit regular nodes only. Keystone stats (keystone:true) are added after the cap and can take a bonus past its max (confirmed in game)",
-   "Stats with condition:\"solo\" only apply while not in a party; the planner shows those totals separately"
+   "Stats with condition:\"solo\" only apply while not in a party; the planner shows those totals separately",
+   "linkIndex is the bit position used in short share links; never reuse or renumber it, give new nodes the next free number"
   ]
  },
  "root": {
@@ -37,7 +38,8 @@
      "key": "fishing-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 0
   },
   {
    "name": "Fishing Exp",
@@ -55,7 +57,8 @@
      "key": "fishing-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 1
   },
   {
    "name": "Bite Wait",
@@ -73,7 +76,8 @@
      "key": "bite-wait-reduction-not-afk-rod",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 2
   },
   {
    "name": "Fishing Encounter Rates",
@@ -91,7 +95,8 @@
      "key": "encounter-rates-while-fishing",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 3
   },
   {
    "name": "Fished Exp",
@@ -109,7 +114,8 @@
      "key": "pokemon-exp-from-fished-pokemon",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 4
   },
   {
    "name": "Feeding Frenzy",
@@ -122,7 +128,8 @@
    "x": 60.7,
    "y": -37.5,
    "id": "angler-06",
-   "stats": []
+   "stats": [],
+   "linkIndex": 5
   },
   {
    "name": "Fishing Exp",
@@ -140,7 +147,8 @@
      "key": "fishing-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 6
   },
   {
    "name": "Bite Wait",
@@ -158,7 +166,8 @@
      "key": "bite-wait-reduction-not-afk-rod",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 7
   },
   {
    "name": "Fishing Encounter Rates",
@@ -176,7 +185,8 @@
      "key": "encounter-rates-while-fishing",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 8
   },
   {
    "name": "Fished Exp",
@@ -194,7 +204,8 @@
      "key": "pokemon-exp-from-fished-pokemon",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 9
   },
   {
    "name": "Chum",
@@ -212,7 +223,8 @@
      "key": "feeding-frenzy-cooldown-reduction",
      "value": 33.0
     }
-   ]
+   ],
+   "linkIndex": 10
   },
   {
    "name": "Fishing Exp",
@@ -230,7 +242,8 @@
      "key": "fishing-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 11
   },
   {
    "name": "Bite Wait",
@@ -248,7 +261,8 @@
      "key": "bite-wait-reduction-not-afk-rod",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 12
   },
   {
    "name": "Deep Water",
@@ -270,7 +284,8 @@
      "key": "drop-chance-on-fished-pokemon",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 13
   },
   {
    "name": "Fished Exp",
@@ -288,7 +303,8 @@
      "key": "pokemon-exp-from-fished-pokemon",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 14
   },
   {
    "name": "Fishing Exp",
@@ -306,7 +322,8 @@
      "key": "fishing-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 15
   },
   {
    "name": "Quick Reflexes",
@@ -324,7 +341,8 @@
      "key": "bite-wait-reduction-not-afk-rod",
      "value": 6.0
     }
-   ]
+   ],
+   "linkIndex": 16
   },
   {
    "name": "Fished Drops",
@@ -342,7 +360,8 @@
      "key": "drop-chance-on-fished-pokemon",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 17
   },
   {
    "name": "Line Trainer",
@@ -360,7 +379,8 @@
      "key": "pokemon-exp-from-fished-pokemon",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 18
   },
   {
    "name": "Fishing Exp",
@@ -378,7 +398,8 @@
      "key": "fishing-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 19
   },
   {
    "name": "Fished Drops",
@@ -396,7 +417,8 @@
      "key": "drop-chance-on-fished-pokemon",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 20
   },
   {
    "name": "Fishing Exp",
@@ -414,7 +436,8 @@
      "key": "fishing-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 21
   },
   {
    "name": "Trawler",
@@ -432,7 +455,8 @@
      "key": "drop-chance-on-fished-pokemon",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 22
   },
   {
    "name": "Seasoned Angler",
@@ -450,7 +474,8 @@
      "key": "fishing-exp",
      "value": 6.0
     }
-   ]
+   ],
+   "linkIndex": 23
   },
   {
    "name": "Master Angler",
@@ -472,7 +497,8 @@
      "key": "bite-wait-reduction-not-afk-rod",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 24
   },
   {
    "name": "Patient Angler",
@@ -491,7 +517,8 @@
      "value": -15,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 25
   },
   {
    "name": "Competitor",
@@ -513,7 +540,8 @@
      "key": "double-pvp-tokens-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 26
   },
   {
    "name": "Double Tower Tokens",
@@ -531,7 +559,8 @@
      "key": "double-tower-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 27
   },
   {
    "name": "Double PvP Tokens",
@@ -549,7 +578,8 @@
      "key": "double-pvp-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 28
   },
   {
    "name": "World Boss Money",
@@ -567,7 +597,8 @@
      "key": "world-boss-money",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 29
   },
   {
    "name": "Double Tower Tokens",
@@ -585,7 +616,8 @@
      "key": "double-tower-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 30
   },
   {
    "name": "Double PvP Tokens",
@@ -603,7 +635,8 @@
      "key": "double-pvp-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 31
   },
   {
    "name": "World Boss Money",
@@ -621,7 +654,8 @@
      "key": "world-boss-money",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 32
   },
   {
    "name": "Double Tower Tokens",
@@ -639,7 +673,8 @@
      "key": "double-tower-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 33
   },
   {
    "name": "Double PvP Tokens",
@@ -657,7 +692,8 @@
      "key": "double-pvp-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 34
   },
   {
    "name": "Raider",
@@ -679,7 +715,8 @@
      "key": "extra-world-boss-loot-roll-chance",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 35
   },
   {
    "name": "Double PvP Tokens",
@@ -697,7 +734,8 @@
      "key": "double-pvp-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 36
   },
   {
    "name": "Tower Climber",
@@ -715,7 +753,8 @@
      "key": "double-tower-tokens-chance",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 37
   },
   {
    "name": "Arena Ace",
@@ -733,7 +772,8 @@
      "key": "double-pvp-tokens-chance",
      "value": 6.0
     }
-   ]
+   ],
+   "linkIndex": 38
   },
   {
    "name": "Iron Will",
@@ -752,7 +792,8 @@
      "value": 30,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 39
   },
   {
    "name": "Underdogs",
@@ -765,7 +806,8 @@
    "x": -129.5,
    "y": -31.8,
    "id": "battler-15",
-   "stats": []
+   "stats": [],
+   "linkIndex": 40
   },
   {
    "name": "Duelist",
@@ -778,7 +820,8 @@
    "x": -139.1,
    "y": -45.2,
    "id": "battler-16",
-   "stats": []
+   "stats": [],
+   "linkIndex": 41
   },
   {
    "name": "Caretaker",
@@ -796,7 +839,8 @@
      "key": "chance-to-keep-iv-powder-or-everstone",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 42
   },
   {
    "name": "Keep Breeding Items",
@@ -814,7 +858,8 @@
      "key": "chance-to-keep-iv-powder-or-everstone",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 43
   },
   {
    "name": "Picnic",
@@ -827,7 +872,8 @@
    "x": -48.7,
    "y": 41.9,
    "id": "breeder-03",
-   "stats": []
+   "stats": [],
+   "linkIndex": 44
   },
   {
    "name": "Keep Breeding Items",
@@ -845,7 +891,8 @@
      "key": "chance-to-keep-iv-powder-or-everstone",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 45
   },
   {
    "name": "Picnic Cooldown",
@@ -863,7 +910,8 @@
      "key": "picnic-cooldown-reduction",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 46
   },
   {
    "name": "First Aid",
@@ -881,7 +929,8 @@
      "key": "picnic-cooldown-reduction",
      "value": 25.0
     }
-   ]
+   ],
+   "linkIndex": 47
   },
   {
    "name": "Pedigree",
@@ -899,7 +948,8 @@
      "key": "chance-per-bred-iv-to-roll-twice",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 48
   },
   {
    "name": "Picnic Party",
@@ -912,7 +962,8 @@
    "x": -83.9,
    "y": 68.9,
    "id": "breeder-08",
-   "stats": []
+   "stats": [],
+   "linkIndex": 49
   },
   {
    "name": "Keep Breeding Items",
@@ -930,7 +981,8 @@
      "key": "chance-to-keep-iv-powder-or-everstone",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 50
   },
   {
    "name": "Keep Breeding Items",
@@ -948,7 +1000,8 @@
      "key": "chance-to-keep-iv-powder-or-everstone",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 51
   },
   {
    "name": "Heirloom",
@@ -970,7 +1023,8 @@
      "key": "chance-per-bred-iv-to-roll-twice",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 52
   },
   {
    "name": "Pedigree",
@@ -988,7 +1042,8 @@
      "key": "chance-per-bred-iv-to-roll-twice",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 53
   },
   {
    "name": "Ball Handler",
@@ -1006,7 +1061,8 @@
      "key": "catch-rate",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 54
   },
   {
    "name": "Quick Exit",
@@ -1019,7 +1075,8 @@
    "x": 28.5,
    "y": -65.7,
    "id": "collector-02",
-   "stats": []
+   "stats": [],
+   "linkIndex": 55
   },
   {
    "name": "Habitat Drops",
@@ -1041,7 +1098,8 @@
      "key": "money-from-wild-battles-on-completed-maps",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 56
   },
   {
    "name": "Steady Hand",
@@ -1059,7 +1117,8 @@
      "key": "catch-rate-on-extremely-rare-elite-and-legendary",
      "value": 25.0
     }
-   ]
+   ],
+   "linkIndex": 57
   },
   {
    "name": "Synchronize",
@@ -1077,7 +1136,8 @@
      "key": "synchronize-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 58
   },
   {
    "name": "Hidden Ability",
@@ -1095,7 +1155,8 @@
      "key": "hidden-ability-chance-30-base",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 59
   },
   {
    "name": "IV Floor",
@@ -1113,7 +1174,8 @@
      "key": "minimum-iv-on-caught-pokemon",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 60
   },
   {
    "name": "Habitat Drops",
@@ -1135,7 +1197,8 @@
      "key": "money-from-wild-battles-on-completed-maps",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 61
   },
   {
    "name": "Synchronize",
@@ -1153,7 +1216,8 @@
      "key": "synchronize-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 62
   },
   {
    "name": "Hidden Ability",
@@ -1171,7 +1235,8 @@
      "key": "hidden-ability-chance-30-base",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 63
   },
   {
    "name": "Good Stock",
@@ -1189,7 +1254,8 @@
      "key": "minimum-iv-on-caught-pokemon",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 64
   },
   {
    "name": "Habitat Drops",
@@ -1211,7 +1277,8 @@
      "key": "money-from-wild-battles-on-completed-maps",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 65
   },
   {
    "name": "Catch Combo",
@@ -1224,7 +1291,8 @@
    "x": 53.4,
    "y": -78.0,
    "id": "collector-13",
-   "stats": []
+   "stats": [],
+   "linkIndex": 66
   },
   {
    "name": "Synchronize",
@@ -1242,7 +1310,8 @@
      "key": "synchronize-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 67
   },
   {
    "name": "Hidden Ability",
@@ -1260,7 +1329,8 @@
      "key": "hidden-ability-chance-30-base",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 68
   },
   {
    "name": "Habitat Drops",
@@ -1282,7 +1352,8 @@
      "key": "money-from-wild-battles-on-completed-maps",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 69
   },
   {
    "name": "Synchronize",
@@ -1300,7 +1371,8 @@
      "key": "synchronize-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 70
   },
   {
    "name": "Hidden Ability",
@@ -1318,7 +1390,8 @@
      "key": "hidden-ability-chance-30-base",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 71
   },
   {
    "name": "Collector's Creed",
@@ -1331,7 +1404,8 @@
    "x": 45.9,
    "y": -116.1,
    "id": "collector-19",
-   "stats": []
+   "stats": [],
+   "linkIndex": 72
   },
   {
    "name": "First Catch",
@@ -1344,7 +1418,8 @@
    "x": 60.7,
    "y": -110.5,
    "id": "collector-20",
-   "stats": []
+   "stats": [],
+   "linkIndex": 73
   },
   {
    "name": "Nature Sense",
@@ -1362,7 +1437,8 @@
      "key": "synchronize-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 74
   },
   {
    "name": "Hidden Potential",
@@ -1380,7 +1456,8 @@
      "key": "hidden-ability-chance-30-base",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 75
   },
   {
    "name": "Field Notes",
@@ -1393,7 +1470,8 @@
    "x": 67.9,
    "y": -123.6,
    "id": "collector-23",
-   "stats": []
+   "stats": [],
+   "linkIndex": 76
   },
   {
    "name": "Region Mastery",
@@ -1411,7 +1489,8 @@
      "key": "encounter-rates-in-completed-regions",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 77
   },
   {
    "name": "Encore",
@@ -1424,7 +1503,8 @@
    "x": 82.3,
    "y": -150.2,
    "id": "collector-25",
-   "stats": []
+   "stats": [],
+   "linkIndex": 78
   },
   {
    "name": "Traveler",
@@ -1442,7 +1522,8 @@
      "key": "ferry-fares-reduction",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 79
   },
   {
    "name": "Safari Encounter Rates",
@@ -1460,7 +1541,8 @@
      "key": "encounter-rates-in-safari-zones",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 80
   },
   {
    "name": "Ferry Fares",
@@ -1478,7 +1560,8 @@
      "key": "ferry-fares-reduction",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 81
   },
   {
    "name": "Regroup",
@@ -1491,7 +1574,8 @@
    "x": -14.2,
    "y": 62.2,
    "id": "explorer-04",
-   "stats": []
+   "stats": [],
+   "linkIndex": 82
   },
   {
    "name": "Safari Regular",
@@ -1509,7 +1593,8 @@
      "key": "encounter-rates-in-safari-zones",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 83
   },
   {
    "name": "Sea Legs",
@@ -1527,7 +1612,8 @@
      "key": "ferry-fares-reduction",
      "value": 30.0
     }
-   ]
+   ],
+   "linkIndex": 84
   },
   {
    "name": "Good Company",
@@ -1545,7 +1631,8 @@
      "key": "regroup-cooldown-reduction",
      "value": 50.0
     }
-   ]
+   ],
+   "linkIndex": 85
   },
   {
    "name": "Dig",
@@ -1558,7 +1645,8 @@
    "x": 23.1,
    "y": 91.0,
    "id": "explorer-08",
-   "stats": []
+   "stats": [],
+   "linkIndex": 86
   },
   {
    "name": "Fly",
@@ -1571,7 +1659,8 @@
    "x": 0.2,
    "y": 93.6,
    "id": "explorer-09",
-   "stats": []
+   "stats": [],
+   "linkIndex": 87
   },
   {
    "name": "Dig Cooldown",
@@ -1589,7 +1678,8 @@
      "key": "dig-cooldown-reduction",
      "value": 25.0
     }
-   ]
+   ],
+   "linkIndex": 88
   },
   {
    "name": "Fly Cooldown",
@@ -1607,7 +1697,8 @@
      "key": "fly-cooldown-reduction",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 89
   },
   {
    "name": "Pack Leader",
@@ -1620,7 +1711,8 @@
    "x": -24.3,
    "y": 96.9,
    "id": "explorer-12",
-   "stats": []
+   "stats": [],
+   "linkIndex": 90
   },
   {
    "name": "Burrow",
@@ -1638,7 +1730,8 @@
      "key": "dig-cooldown-reduction",
      "value": 25.0
     }
-   ]
+   ],
+   "linkIndex": 91
   },
   {
    "name": "Safari Ranger",
@@ -1662,7 +1755,8 @@
      "value": -5,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 92
   },
   {
    "name": "Tailwind",
@@ -1680,7 +1774,8 @@
      "key": "fly-cooldown-reduction",
      "value": 25.0
     }
-   ]
+   ],
+   "linkIndex": 93
   },
   {
    "name": "Cave Dweller",
@@ -1693,7 +1788,8 @@
    "x": 38.0,
    "y": 143.0,
    "id": "explorer-16",
-   "stats": []
+   "stats": [],
+   "linkIndex": 94
   },
   {
    "name": "Nomad",
@@ -1732,7 +1828,8 @@
      "value": -10,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 95
   },
   {
    "name": "Night Owl",
@@ -1745,7 +1842,8 @@
    "x": 0,
    "y": 145,
    "id": "explorer-18",
-   "stats": []
+   "stats": [],
+   "linkIndex": 96
   },
   {
    "name": "Coin Purse",
@@ -1763,7 +1861,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 97
   },
   {
    "name": "Wild Money",
@@ -1781,7 +1880,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 98
   },
   {
    "name": "Pay Day",
@@ -1794,7 +1894,8 @@
    "x": 42.1,
    "y": 48.4,
    "id": "fortune-03",
-   "stats": []
+   "stats": [],
+   "linkIndex": 99
   },
   {
    "name": "Drop Chance",
@@ -1812,7 +1913,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 100
   },
   {
    "name": "Pokemart Prices",
@@ -1830,7 +1932,8 @@
      "key": "pokemart-prices-reduction",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 101
   },
   {
    "name": "Wild Money",
@@ -1848,7 +1951,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 102
   },
   {
    "name": "Big Spender",
@@ -1866,7 +1970,8 @@
      "key": "pay-day-cooldown-reduction",
      "value": 33.0
     }
-   ]
+   ],
+   "linkIndex": 103
   },
   {
    "name": "Drop Chance",
@@ -1884,7 +1989,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 104
   },
   {
    "name": "Haggler",
@@ -1906,7 +2012,8 @@
      "key": "gender-change-and-storage-box-prices-reduction",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 105
   },
   {
    "name": "Wild Money",
@@ -1924,7 +2031,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 106
   },
   {
    "name": "Bonus Round",
@@ -1942,7 +2050,8 @@
      "key": "pay-day-duration",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 107
   },
   {
    "name": "Drop Chance",
@@ -1960,7 +2069,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 108
   },
   {
    "name": "Broker",
@@ -1973,7 +2083,8 @@
    "x": 35.6,
    "y": 86.7,
    "id": "fortune-13",
-   "stats": []
+   "stats": [],
+   "linkIndex": 109
   },
   {
    "name": "Wild Money",
@@ -1991,7 +2102,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 110
   },
   {
    "name": "Drop Chance",
@@ -2009,7 +2121,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 111
   },
   {
    "name": "Wild Money",
@@ -2027,7 +2140,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 112
   },
   {
    "name": "Drop Chance",
@@ -2045,7 +2159,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 113
   },
   {
    "name": "Frugal",
@@ -2079,7 +2194,8 @@
      "value": -10,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 114
   },
   {
    "name": "Wild Money",
@@ -2097,7 +2213,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 115
   },
   {
    "name": "Drop Chance",
@@ -2115,7 +2232,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 116
   },
   {
    "name": "Wild Money",
@@ -2133,7 +2251,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 117
   },
   {
    "name": "Drop Chance",
@@ -2151,7 +2270,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 118
   },
   {
    "name": "Wild Money",
@@ -2169,7 +2289,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 119
   },
   {
    "name": "Drop Chance",
@@ -2187,7 +2308,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 120
   },
   {
    "name": "Wild Money",
@@ -2205,7 +2327,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 121
   },
   {
    "name": "Drop Chance",
@@ -2223,7 +2346,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 122
   },
   {
    "name": "Wild Money",
@@ -2241,7 +2365,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 123
   },
   {
    "name": "Drop Chance",
@@ -2259,7 +2384,8 @@
      "key": "drop-chance",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 124
   },
   {
    "name": "Big Earner",
@@ -2277,7 +2403,8 @@
      "key": "money-from-wild-battles",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 125
   },
   {
    "name": "Lucky Find",
@@ -2295,7 +2422,8 @@
      "key": "drop-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 126
   },
   {
    "name": "Windfall",
@@ -2313,7 +2441,8 @@
      "key": "money-from-wild-battles",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 127
   },
   {
    "name": "Hoarder",
@@ -2331,7 +2460,8 @@
      "key": "drop-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 128
   },
   {
    "name": "Lone Wanderer",
@@ -2357,7 +2487,8 @@
      "keystone": true,
      "condition": "solo"
     }
-   ]
+   ],
+   "linkIndex": 129
   },
   {
    "name": "Treasure Hunter",
@@ -2381,7 +2512,8 @@
      "value": -10,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 130
   },
   {
    "name": "Tracker",
@@ -2399,7 +2531,8 @@
      "key": "hunting-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 131
   },
   {
    "name": "Hunting Exp",
@@ -2417,7 +2550,8 @@
      "key": "hunting-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 132
   },
   {
    "name": "Hunter Tokens",
@@ -2435,7 +2569,8 @@
      "key": "hunter-tokens-from-contracts",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 133
   },
   {
    "name": "Contract Fees",
@@ -2453,7 +2588,8 @@
      "key": "contract-cancel-and-block-costs-reduction",
      "value": 15.0
     }
-   ]
+   ],
+   "linkIndex": 134
   },
   {
    "name": "Elite Chance",
@@ -2471,7 +2607,8 @@
      "key": "elite-chance",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 135
   },
   {
    "name": "Group Battles",
@@ -2489,7 +2626,8 @@
      "key": "group-battle-chance-hunter-s-horn",
      "value": 20.0
     }
-   ]
+   ],
+   "linkIndex": 136
   },
   {
    "name": "Hunting Exp",
@@ -2507,7 +2645,8 @@
      "key": "hunting-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 137
   },
   {
    "name": "Hunter Tokens",
@@ -2525,7 +2664,8 @@
      "key": "hunter-tokens-from-contracts",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 138
   },
   {
    "name": "Negotiator",
@@ -2543,7 +2683,8 @@
      "key": "contract-cancel-and-block-costs-reduction",
      "value": 35.0
     }
-   ]
+   ],
+   "linkIndex": 139
   },
   {
    "name": "Elite Chance",
@@ -2561,7 +2702,8 @@
      "key": "elite-chance",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 140
   },
   {
    "name": "Group Battles",
@@ -2579,7 +2721,8 @@
      "key": "group-battle-chance-hunter-s-horn",
      "value": 20.0
     }
-   ]
+   ],
+   "linkIndex": 141
   },
   {
    "name": "Hunting Exp",
@@ -2597,7 +2740,8 @@
      "key": "hunting-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 142
   },
   {
    "name": "Hunter Tokens",
@@ -2615,7 +2759,8 @@
      "key": "hunter-tokens-from-contracts",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 143
   },
   {
    "name": "Double Credit",
@@ -2633,7 +2778,8 @@
      "key": "chance-a-kill-or-catch-counts-twice-contracts",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 144
   },
   {
    "name": "Second Wind",
@@ -2646,7 +2792,8 @@
    "x": -62.3,
    "y": -87.2,
    "id": "hunter-15",
-   "stats": []
+   "stats": [],
+   "linkIndex": 145
   },
   {
    "name": "Elite Chance",
@@ -2664,7 +2811,8 @@
      "key": "elite-chance",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 146
   },
   {
    "name": "Group Battles",
@@ -2682,7 +2830,8 @@
      "key": "group-battle-chance-hunter-s-horn",
      "value": 20.0
     }
-   ]
+   ],
+   "linkIndex": 147
   },
   {
    "name": "Hunting Exp",
@@ -2700,7 +2849,8 @@
      "key": "hunting-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 148
   },
   {
    "name": "Bounty Broker",
@@ -2722,7 +2872,8 @@
      "key": "bounty-chance",
      "value": 50.0
     }
-   ]
+   ],
+   "linkIndex": 149
   },
   {
    "name": "Quick Tally",
@@ -2740,7 +2891,8 @@
      "key": "chance-a-kill-or-catch-counts-twice-contracts",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 150
   },
   {
    "name": "Elite Chance",
@@ -2758,7 +2910,8 @@
      "key": "elite-chance",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 151
   },
   {
    "name": "Pack Tracker",
@@ -2776,7 +2929,8 @@
      "key": "group-battle-chance-hunter-s-horn",
      "value": 40.0
     }
-   ]
+   ],
+   "linkIndex": 152
   },
   {
    "name": "Hunting Exp",
@@ -2794,7 +2948,8 @@
      "key": "hunting-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 153
   },
   {
    "name": "Hunting Exp",
@@ -2812,7 +2967,8 @@
      "key": "hunting-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 154
   },
   {
    "name": "Mark Target",
@@ -2825,7 +2981,8 @@
    "x": -85.2,
    "y": -92.5,
    "id": "hunter-25",
-   "stats": []
+   "stats": [],
+   "linkIndex": 155
   },
   {
    "name": "Elite Tracker",
@@ -2843,7 +3000,8 @@
      "key": "elite-chance",
      "value": 9.0
     }
-   ]
+   ],
+   "linkIndex": 156
   },
   {
    "name": "Field Guide",
@@ -2861,7 +3019,8 @@
      "key": "hunting-exp",
      "value": 6.0
     }
-   ]
+   ],
+   "linkIndex": 157
   },
   {
    "name": "Horde Caller",
@@ -2874,7 +3033,8 @@
    "x": -49,
    "y": -123,
    "id": "hunter-28",
-   "stats": []
+   "stats": [],
+   "linkIndex": 158
   },
   {
    "name": "Master Hunter",
@@ -2896,7 +3056,8 @@
      "key": "hunter-tokens-from-contracts",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 159
   },
   {
    "name": "Token Collector",
@@ -2909,7 +3070,8 @@
    "x": -68.2,
    "y": -123.9,
    "id": "hunter-30",
-   "stats": []
+   "stats": [],
+   "linkIndex": 160
   },
   {
    "name": "Wear Down",
@@ -2922,7 +3084,8 @@
    "x": -75.4,
    "y": -137.0,
    "id": "hunter-31",
-   "stats": []
+   "stats": [],
+   "linkIndex": 161
   },
   {
    "name": "Elite Slayer",
@@ -2941,7 +3104,8 @@
      "value": 15,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 162
   },
   {
    "name": "Rock Hound",
@@ -2959,7 +3123,8 @@
      "key": "mining-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 163
   },
   {
    "name": "Mining Exp",
@@ -2977,7 +3142,8 @@
      "key": "mining-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 164
   },
   {
    "name": "Swing Speed",
@@ -2995,7 +3161,8 @@
      "key": "time-between-mining-swings-reduction",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 165
   },
   {
    "name": "Double Gems",
@@ -3013,7 +3180,8 @@
      "key": "pickaxe-double-gem-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 166
   },
   {
    "name": "Mining Exp",
@@ -3031,7 +3199,8 @@
      "key": "mining-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 167
   },
   {
    "name": "Swing Speed",
@@ -3049,7 +3218,8 @@
      "key": "time-between-mining-swings-reduction",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 168
   },
   {
    "name": "Double Gems",
@@ -3067,7 +3237,8 @@
      "key": "pickaxe-double-gem-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 169
   },
   {
    "name": "Mining Exp",
@@ -3085,7 +3256,8 @@
      "key": "mining-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 170
   },
   {
    "name": "Swing Speed",
@@ -3103,7 +3275,8 @@
      "key": "time-between-mining-swings-reduction",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 171
   },
   {
    "name": "Cluster",
@@ -3121,7 +3294,8 @@
      "key": "pickaxe-double-gem-chance",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 172
   },
   {
    "name": "Mining Exp",
@@ -3139,7 +3313,8 @@
      "key": "mining-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 173
   },
   {
    "name": "Pickaxe Power",
@@ -3157,7 +3332,8 @@
      "key": "chance-to-break-the-rock-per-swing",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 174
   },
   {
    "name": "Mining Exp",
@@ -3175,7 +3351,8 @@
      "key": "mining-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 175
   },
   {
    "name": "Pickaxe Power",
@@ -3193,7 +3370,8 @@
      "key": "chance-to-break-the-rock-per-swing",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 176
   },
   {
    "name": "Appraiser",
@@ -3211,7 +3389,8 @@
      "key": "gem-sell-price",
      "value": 4.0
     }
-   ]
+   ],
+   "linkIndex": 177
   },
   {
    "name": "Mining Exp",
@@ -3229,7 +3408,8 @@
      "key": "mining-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 178
   },
   {
    "name": "Heavy Swing",
@@ -3247,7 +3427,8 @@
      "key": "chance-to-break-the-rock-per-swing",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 179
   },
   {
    "name": "Rich Vein",
@@ -3260,7 +3441,8 @@
    "x": 106.6,
    "y": 64.6,
    "id": "prospector-18",
-   "stats": []
+   "stats": [],
+   "linkIndex": 180
   },
   {
    "name": "Fossil Find",
@@ -3273,7 +3455,8 @@
    "x": 147.9,
    "y": 46.2,
    "id": "prospector-19",
-   "stats": []
+   "stats": [],
+   "linkIndex": 181
   },
   {
    "name": "Prospect",
@@ -3291,7 +3474,8 @@
      "key": "rich-vein-cooldown-reduction",
      "value": 33.0
     }
-   ]
+   ],
+   "linkIndex": 182
   },
   {
    "name": "Seasoned Miner",
@@ -3309,7 +3493,8 @@
      "key": "mining-exp",
      "value": 6.0
     }
-   ]
+   ],
+   "linkIndex": 183
   },
   {
    "name": "Master Miner",
@@ -3331,7 +3516,8 @@
      "key": "time-between-mining-swings-reduction",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 184
   },
   {
    "name": "Deep Core",
@@ -3355,7 +3541,8 @@
      "value": -8,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 185
   },
   {
    "name": "Seismic Sense",
@@ -3368,7 +3555,8 @@
    "x": 195,
    "y": 12,
    "id": "prospector-24",
-   "stats": []
+   "stats": [],
+   "linkIndex": 186
   },
   {
    "name": "Wild Instincts",
@@ -3390,7 +3578,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 187
   },
   {
    "name": "Double Legendary Tokens",
@@ -3408,7 +3597,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 188
   },
   {
    "name": "Encounter Rates",
@@ -3426,7 +3616,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 189
   },
   {
    "name": "Shiny Chance",
@@ -3444,7 +3635,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 190
   },
   {
    "name": "Longer Lures",
@@ -3462,7 +3654,8 @@
      "key": "honey-and-shiny-lure-duration",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 191
   },
   {
    "name": "Double Legendary Tokens",
@@ -3480,7 +3673,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 192
   },
   {
    "name": "Encounter Rates",
@@ -3498,7 +3692,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 193
   },
   {
    "name": "Shiny Chance",
@@ -3516,7 +3711,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 194
   },
   {
    "name": "Longer Lures",
@@ -3534,7 +3730,8 @@
      "key": "honey-and-shiny-lure-duration",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 195
   },
   {
    "name": "Double Legendary Tokens",
@@ -3552,7 +3749,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 196
   },
   {
    "name": "Encounter Rates",
@@ -3570,7 +3768,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 197
   },
   {
    "name": "Shiny Chance",
@@ -3588,7 +3787,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 198
   },
   {
    "name": "Beekeeper",
@@ -3606,7 +3806,8 @@
      "key": "honey-and-shiny-lure-duration",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 199
   },
   {
    "name": "Double Legendary Tokens",
@@ -3624,7 +3825,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 200
   },
   {
    "name": "Encounter Rates",
@@ -3642,7 +3844,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 201
   },
   {
    "name": "Shiny Chance",
@@ -3660,7 +3863,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 202
   },
   {
    "name": "Double Legendary Tokens",
@@ -3678,7 +3882,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 203
   },
   {
    "name": "Encounter Rates",
@@ -3696,7 +3901,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 204
   },
   {
    "name": "Shiny Chance",
@@ -3714,7 +3920,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 205
   },
   {
    "name": "Shiny Chance",
@@ -3732,7 +3939,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 206
   },
   {
    "name": "Pilgrim",
@@ -3750,7 +3958,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 207
   },
   {
    "name": "Keen Eye",
@@ -3768,7 +3977,8 @@
      "key": "encounter-rates",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 208
   },
   {
    "name": "Glimmer",
@@ -3786,7 +3996,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 2.5
     }
-   ]
+   ],
+   "linkIndex": 209
   },
   {
    "name": "Double Legendary Tokens",
@@ -3804,7 +4015,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 210
   },
   {
    "name": "Encounter Rates",
@@ -3822,7 +4034,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 211
   },
   {
    "name": "Sweet Scent",
@@ -3835,7 +4048,8 @@
    "x": 0.3,
    "y": -160.0,
    "id": "seeker-26",
-   "stats": []
+   "stats": [],
+   "linkIndex": 212
   },
   {
    "name": "Shiny Chance",
@@ -3853,7 +4067,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 213
   },
   {
    "name": "Double Legendary Tokens",
@@ -3871,7 +4086,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 214
   },
   {
    "name": "Encounter Rates",
@@ -3889,7 +4105,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 215
   },
   {
    "name": "Lingering Scent",
@@ -3907,7 +4124,8 @@
      "key": "sweet-scent-duration",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 216
   },
   {
    "name": "Shiny Chance",
@@ -3925,7 +4143,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 217
   },
   {
    "name": "Double Legendary Tokens",
@@ -3943,7 +4162,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 218
   },
   {
    "name": "Encounter Rates",
@@ -3961,7 +4181,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 219
   },
   {
    "name": "Scent Trail",
@@ -3979,7 +4200,8 @@
      "key": "sweet-scent-cooldown-reduction",
      "value": 25.0
     }
-   ]
+   ],
+   "linkIndex": 220
   },
   {
    "name": "Shiny Chance",
@@ -3997,7 +4219,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 221
   },
   {
    "name": "Double Legendary Tokens",
@@ -4015,7 +4238,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 222
   },
   {
    "name": "Encounter Rates",
@@ -4033,7 +4257,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 223
   },
   {
    "name": "Shared Scent",
@@ -4046,7 +4271,8 @@
    "x": 0,
    "y": -201,
    "id": "seeker-38",
-   "stats": []
+   "stats": [],
+   "linkIndex": 224
   },
   {
    "name": "Shiny Chance",
@@ -4064,7 +4290,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 225
   },
   {
    "name": "Double Legendary Tokens",
@@ -4082,7 +4309,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 226
   },
   {
    "name": "Encounter Rates",
@@ -4100,7 +4328,8 @@
      "key": "encounter-rates",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 227
   },
   {
    "name": "Shiny Chance",
@@ -4118,7 +4347,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 228
   },
   {
    "name": "Ancient Call",
@@ -4136,7 +4366,8 @@
      "key": "double-legendary-tokens-chance",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 229
   },
   {
    "name": "Rare Finds",
@@ -4154,7 +4385,8 @@
      "key": "encounter-rates",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 230
   },
   {
    "name": "Shiny Chance",
@@ -4172,7 +4404,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 1.2
     }
-   ]
+   ],
+   "linkIndex": 231
   },
   {
    "name": "Rare Hunter",
@@ -4196,7 +4429,8 @@
      "value": -15,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 232
   },
   {
    "name": "Pilgrim's Vow",
@@ -4220,7 +4454,8 @@
      "value": -15,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 233
   },
   {
    "name": "Shining Path",
@@ -4238,7 +4473,8 @@
      "key": "shiny-chance-on-wild-pokemon",
      "value": 2.1
     }
-   ]
+   ],
+   "linkIndex": 234
   },
   {
    "name": "Shiny Obsession",
@@ -4262,7 +4498,8 @@
      "value": -20,
      "keystone": true
     }
-   ]
+   ],
+   "linkIndex": 235
   },
   {
    "name": "Shiny Bond",
@@ -4275,7 +4512,8 @@
    "x": 47,
    "y": -271,
    "id": "seeker-50",
-   "stats": []
+   "stats": [],
+   "linkIndex": 236
   },
   {
    "name": "Battle Ready",
@@ -4293,7 +4531,8 @@
      "key": "pokemon-exp",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 237
   },
   {
    "name": "Pokemon Exp",
@@ -4311,7 +4550,8 @@
      "key": "pokemon-exp",
      "value": 1.5
     }
-   ]
+   ],
+   "linkIndex": 238
   },
   {
    "name": "Power Training",
@@ -4329,7 +4569,8 @@
      "key": "extra-evs-per-knockout",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 239
   },
   {
    "name": "Trainer Battle Exp",
@@ -4347,7 +4588,8 @@
      "key": "pokemon-exp-from-trainer-battles",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 240
   },
   {
    "name": "Rematch Prizes",
@@ -4365,7 +4607,8 @@
      "key": "money-and-pokemon-exp-from-gym-leaders-and-elite-four",
      "value": 20.0
     }
-   ]
+   ],
+   "linkIndex": 241
   },
   {
    "name": "Pokemon Exp",
@@ -4383,7 +4626,8 @@
      "key": "pokemon-exp",
      "value": 1.5
     }
-   ]
+   ],
+   "linkIndex": 242
   },
   {
    "name": "Exp Share",
@@ -4401,7 +4645,8 @@
      "key": "exp-share-holders-share-50-56-75-81-enhanced",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 243
   },
   {
    "name": "Trainer Battle Exp",
@@ -4419,7 +4664,8 @@
      "key": "pokemon-exp-from-trainer-battles",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 244
   },
   {
    "name": "Pokemon Exp",
@@ -4437,7 +4683,8 @@
      "key": "pokemon-exp",
      "value": 1.5
     }
-   ]
+   ],
+   "linkIndex": 245
   },
   {
    "name": "Exp Share",
@@ -4455,7 +4702,8 @@
      "key": "exp-share-holders-share-50-56-75-81-enhanced",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 246
   },
   {
    "name": "Gym Regular",
@@ -4477,7 +4725,8 @@
      "key": "gym-leader-and-elite-four-rematch-time-reduction",
      "value": 20.0
     }
-   ]
+   ],
+   "linkIndex": 247
   },
   {
    "name": "Pokemon Exp",
@@ -4495,7 +4744,8 @@
      "key": "pokemon-exp",
      "value": 1.5
     }
-   ]
+   ],
+   "linkIndex": 248
   },
   {
    "name": "Mentor",
@@ -4513,7 +4763,8 @@
      "key": "exp-share-holders-share-50-56-75-81-enhanced",
      "value": 2.0
     }
-   ]
+   ],
+   "linkIndex": 249
   },
   {
    "name": "Coach",
@@ -4535,7 +4786,8 @@
      "key": "money-from-trainer-battles",
      "value": 10.0
     }
-   ]
+   ],
+   "linkIndex": 250
   },
   {
    "name": "Pokemon Exp",
@@ -4553,7 +4805,8 @@
      "key": "pokemon-exp",
      "value": 1.5
     }
-   ]
+   ],
+   "linkIndex": 251
   },
   {
    "name": "Tutor",
@@ -4566,7 +4819,8 @@
    "x": -115,
    "y": 47,
    "id": "trainer-16",
-   "stats": []
+   "stats": [],
+   "linkIndex": 252
   },
   {
    "name": "Trainer Money",
@@ -4584,7 +4838,8 @@
      "key": "money-from-trainer-battles",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 253
   },
   {
    "name": "Rematch Call",
@@ -4597,7 +4852,8 @@
    "x": -99.0,
    "y": 5.9,
    "id": "trainer-18",
-   "stats": []
+   "stats": [],
+   "linkIndex": 254
   },
   {
    "name": "Pokemon Exp",
@@ -4615,7 +4871,8 @@
      "key": "pokemon-exp",
      "value": 1.5
     }
-   ]
+   ],
+   "linkIndex": 255
   },
   {
    "name": "Prize Purse",
@@ -4633,7 +4890,8 @@
      "key": "money-from-trainer-battles",
      "value": 5.0
     }
-   ]
+   ],
+   "linkIndex": 256
   },
   {
    "name": "Challenger",
@@ -4651,7 +4909,8 @@
      "key": "rematch-call-cooldown-reduction",
      "value": 25.0
     }
-   ]
+   ],
+   "linkIndex": 257
   },
   {
    "name": "Fast Learner",
@@ -4669,7 +4928,8 @@
      "key": "pokemon-exp",
      "value": 3.0
     }
-   ]
+   ],
+   "linkIndex": 258
   },
   {
    "name": "Prodigy",
@@ -4687,7 +4947,8 @@
      "key": "pokemon-exp",
      "value": 1.0
     }
-   ]
+   ],
+   "linkIndex": 259
   },
   {
    "name": "Monotype Specialist",
@@ -4700,7 +4961,8 @@
    "x": -161.3,
    "y": 101.0,
    "id": "trainer-24",
-   "stats": []
+   "stats": [],
+   "linkIndex": 260
   }
  ],
  "edges": [

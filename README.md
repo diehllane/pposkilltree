@@ -12,7 +12,9 @@ A click-to-plan simulator for the Trainer Tree in the PokeNexus Godot beta (clie
 
 ## Using the planner
 
-Click a node to take it plus the cheapest path to it, as the game does. Right-click a taken node to refund it; anything that loses its connection to the start is refunded too. Set your trainer level to lock or unlock gated nodes. Search highlights matching nodes. "Copy share link" puts the whole build in the URL, and three local save slots are available.
+Click a node to take it plus the cheapest path to it, as the game does. Right-click a taken node to refund it; anything that loses its connection to the start is refunded too. Set your trainer level to lock or unlock gated nodes. Search highlights matching nodes. "Copy share link" puts the whole build in a short URL (one bit per node, about 45 characters after the `#`). Older long links still open, and the page converts them to the short form. Three local save slots are also available.
+
+The short links use each node's `linkIndex` in `skilltree.json`. When adding nodes, give them the next unused number and never renumber existing ones, or old links will load the wrong nodes.
 
 ## What the data covers
 
